@@ -1,0 +1,11 @@
+LICENSE
+
+# src
+
+脚本代码部分遵循 CCPL4.0 协议授权
+The script or codes including in this project, such as codes in ./src/* follows CCPL4.0 licenses
+
+# lang
+
+翻译文本等其他内容遵循 GPLv3 协议授权
+The language files under ./lang/*, and some other files not in src part follows GPLv3 licenses

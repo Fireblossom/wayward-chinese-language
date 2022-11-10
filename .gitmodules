@@ -1,0 +1,3 @@
+[submodule "mod-reference/english-official"]
+	path = mod-reference/english-official
+	url = https://github.com/WaywardGame/english-language
