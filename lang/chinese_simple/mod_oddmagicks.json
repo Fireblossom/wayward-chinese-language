@@ -1,0 +1,8 @@
+{
+	"extends": "简体中文",
+	"dictionaries": {
+		"magicalPropertyType": {
+			"modOddMagicksFloaty": ["飘浮", "奇异的风将你举入空中，减少跳跃所消耗的体力."]
+		}
+	}
+}
