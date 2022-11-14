@@ -2,7 +2,7 @@
 	"extends": "简体中文",
 	"dictionaries": {
 		"questRequirement": {
-			"modStarterQuestActionSlots": "在操作栏上添加一个新的快捷操作",
+			"modStarterQuestActionSlots": "在操作栏上添加一个新的快捷行动",
 			"modStarterQuestLightCampfire": "点燃营火",
 			"modStarterQuestStokeCampfire": "为营火添火",
 			"modStarterQuestFillStill": "将水倒入蒸馏器中",
@@ -24,18 +24,18 @@
 			],
 
 			"modStarterQuestActionSlots": [
-				"物品使用 & 动作格",
-				"{#--color-brown:所有物品都有一些利用它来进行的行为.}\n\n你可以随时按下 {BINDINGS:GameItemMenu} 打开\"使用\"菜单，来查看能够执行的动作.\n\n{#--color-brown:有时你可能会觉得这样使用物品显得比较笨拙，那么你就可以考虑通过操作栏为某个特定行为绑定快捷键.}\n\n- 把物品拖拽到操作栏上.\n\n- 或者使用任意一种 \"为操作栏分配行动\" 的快捷键。例如在鼠标悬停于某个物品之上时，按下 {BINDINGS:GameActionBarAssignSlot0}, {BINDINGS:GameActionBarAssignSlot1}, 或 {BINDINGS:GameActionBarAssignSlot2} 来绑定到第 1/2/3 格操作栏.\n\n{#--color-brown:一旦物品被绑定到操作栏之后，你就可以通过对应的(当鼠标在操作栏格位上悬停时显示的)快捷键来使用它了}\n\n\n此外, 你也可以将任意的某个\"行为\"通过 {BINDINGS:MenuContextMenu} 绑定到空的操作栏格位上. 你所绑定的\"行为\"在执行时将会自动选择最匹配的物品来使用."
+				"物品使用 & 快捷行动",
+				"{#--color-brown:所有物品都有一些使用它们进行的相关行动.}\n\n你可以随时按下 {BINDINGS:GameItemMenu} 打开\"使用\"菜单，来查看能够执行的动作.\n\n{#--color-brown:有时你可能会觉得这样使用物品显得比较笨拙，那么你就可以考虑通过操作栏为某个特定行为绑定快捷键.}\n\n- 把物品拖拽到操作栏上.\n\n- 或者使用任意一种 \"为操作栏分配行动\" 的快捷键。例如在鼠标悬停于某个物品之上时，按下 {BINDINGS:GameActionBarAssignSlot0}, {BINDINGS:GameActionBarAssignSlot1}, 或 {BINDINGS:GameActionBarAssignSlot2} 来绑定到操作栏的第 1/2/3 格.\n\n{#--color-brown:一旦物品被绑定到操作栏之后，你就可以通过对应的(当鼠标在操作栏格位上悬停时显示的)快捷键来使用它了}\n\n\n此外, 你也可以将任意的某个\"行动\"通过 {BINDINGS:MenuContextMenu} 绑定到空的操作栏格位上. 你所绑定的\"行动\"在执行时将会自动选择最匹配的物品来使用."
 			],
 
 			"modStarterQuestResourceGathering": [
 				"收集资源",
-				"现在你已经装备了什么并为它分配了一个操作栏，你可以试着去收集一些资源了.\n\n首先如果你是通过操作栏来使用物品的话，请确保它的行动已经设置成了 \"{/劈砍/}\" 或是 \"{/采掘/}\".\n\n去寻找一棵苹果树并收集它的树枝，以及寻找灰色的山岩来收集石块."
+				"现在你已经装备了什么并为它分配了一个操作栏，你可以试着去收集一些资源了.\n\n首先如果你是通过操作栏来使用物品的话，请确保它的行动已经设置成了 \"{/砍伐/}\" 或是 \"{/采掘/}\".\n\n去寻找一棵苹果树并收集它的树枝，以及寻找灰色的山岩来收集石块."
 			],
 
 			"modStarterQuestCrafting": [
 				"工艺",
-				"为了生存下去，你需要利用你收集到的资源去制作新的物品. \n\n按下 {BINDINGS:DialogCrafting} 以打开制造页面. 在这里你可以确认使用库存物品制造能够创造的东西. \n\n现在我们需要从制作一个很多配方都需要用到的\"尖锐的石块\"开始. 不是所有制作的尝试都能成功，精妙的成品需要你拥有更高的制造技艺.\n\n顺便，如果你对制作面板的大小或位置不满意，可以通过拖拽其四周的边界来进行调整."
+				"为了生存下去，你需要利用你收集到的资源去制作新的物品. \n\n按下 {BINDINGS:DialogCrafting} 以打开制造页面. 在这里你可以确认使用库存物品制造能够创造的东西. \n\n现在我们需要从制作一个很多配方都需要用到的\"尖锐的石块\"开始. 不是所有制作的尝试都能成功，精巧的成品需要你拥有更高妙的制造技艺.\n\n顺便，如果你对制作面板的大小或位置不满意，可以通过拖拽其四周的边界来进行调整."
 			],
 
 			"modStarterQuestDismantle": [
