@@ -8,10 +8,10 @@
 未翻译部分会在完成后逐渐追加更新，详细以及其他存疑项请见 WORK-LIST
 
 ## 汉化范围
-
-+ 游戏本体 2.12.1 版本
+官方内容 [均更新至 2.12.2 版本]
++ 游戏本体
 + 内置mod [Starter Quest] 
-+ 官方在创意工坊中发布的部分mod [debug tools], [balancing tools], [tars], [oddmagicks]
++ 创意工坊中的部分mod [debug tools], [balancing tools], [tars], [oddmagicks]
 
 ## 使用
 

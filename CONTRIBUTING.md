@@ -170,14 +170,6 @@ X.X.X.0 版本计划对应于通过脚本自动在游戏更新后生成的临时
 
 只要保证翻译后文本是与英文文本是逐行对照的，该脚本理论上也可辅助翻译其他语言
 
-### [JUST-IDEA] Compatible Support
-
-对于一些改动不大的小版本，mod版本可以与游戏本体不完全对应。新版的翻译也能完全/部分兼容更早的游戏版本
-
-需注意，仅当不同版本下 dictionaries 中同 Variable 对应的翻译并没有产生冲突的表意变更时，才能支持兼容模式，否则旧版本会产生大量的翻译错误，不如彻底不兼容
-
-在 version update tool 执行 language-merge 时，追加 -compatible 指令即可启用兼容模式输出，启用后脚本会将 diff 内容中旧版删除掉的部分以 extends 的模式提取到 lang\compatible 下，并保留原始翻译，来实现兼容
-
 ## [JUST-IDEA] Translation/Test Check-up Tool
 基于 debug-tools 已经提供的基础功能
 定义行为集，将同类信息展示在同一个母页面中
@@ -193,3 +185,13 @@ X.X.X.0 版本计划对应于通过脚本自动在游戏更新后生成的临时
 #### merge 参数
 + append
 + compatible
+
+# 已弃用
+
+### [HISTORY-IDEA] HISTORY Compatible Support
+
+对于一些改动不大的小版本，mod版本可以与游戏本体不完全对应。新版的翻译理论上可以完全/部分兼容更早的游戏版本
+
+在主体译制完成后，理论上需要将变更同步追溯到更早的只有对翻译的修正，否则由于情景变化部分新内容可能并不合适，应该直接使用其对应的版本，而这一点可以直接在历史release中获取
+
+因此这一点实际上没有特别支持的必要；尽管如此，为防万一 waywardVersion 还是尽量保持了非必要不随本体更新追加。
