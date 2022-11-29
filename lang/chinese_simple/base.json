@@ -418,8 +418,8 @@
 			"unban": "解除封禁"
 		},
 		"corpse": {
-			"fireElemental": "一堆灰烬<pile of embers>",
-			"dryad": "永久冻土<permagrowth>"
+			"fireElemental": "烈火的余烬",
+			"dryad": "永恒的遗霜"
 		},
 		"craftEfficacy": {
 			"lowest": "劣等",
@@ -2669,12 +2669,12 @@
 			"rested": "休息",
 			"resting": "休息",
 			"restingOnGroundNotEffective": "直接在地上休息似乎并不怎么舒服，应该有更好的方法.",
-			"restInterrupted": "{0} {1?因 {1} }中断了.",
+			"restInterrupted": "{0} 被{1? {1} }打断了.",
 			"restInterruptedDamage": "你受到某种伤害",
 			"restInterruptedDying": "濒死",
 			"restInterruptedLoudNoise": "一阵响亮又刺耳的噪音",
 			"restInterruptedPain": "你恒久的疼痛",
-			"restInterruptedStirring": "什么东西在你周围活跃",
+			"restInterruptedStirring": "你周围活跃的什么",
 			"restInterruptedWaterPoured": "你被泼了一身水",
 			"restLongTime": "很久",
 			"restModerateTime": "一段时间",
