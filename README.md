@@ -11,10 +11,13 @@
 + 由于游戏本体的文本也已经产生了很大变化，汉化时对之前的几个模组仅在部分用词上保持了一致
 
 ## 汉化范围
-官方内容 [均更新至 2.12.2-beta 版本]
-+ 游戏本体
-+ 内置 mod [Starter Quest] 
-+ 创意工坊中的部分 mod [debug tools], [balancing tools], [tars], [oddmagicks]
+
+官方内容 
++ 游戏本体 <更新至 2.13.0-beta 版本> <当前为自动生成的临时兼容版本，较上版本原文有过修改的汉化文本被暂时移除>
++ 内置 mod [Starter Quest] <更新至 2.13.0-beta 版本>
+
+创意工坊中的部分 mod <均更新至 2.12.2-beta 版本>
++ [debug tools], [balancing tools], [tars], [oddmagicks]
 
 ## 使用
 
@@ -27,6 +30,8 @@
 # CONTRIBUTING
 
 如需译制材料等其他参考信息，请在本地文件中打开CONTRIBUTING.md，或在 GITHUB 中查看[GITHUB:wayward-chinese-language/CONTRIBUTING.md](https://github.com/PlotNarrater/wayward-chinese-language/blob/master/CONTRIBUTING.md)
+
+此外，提供了部分更新/比对的脚本工具，但脚本工具本身并未提供GUI或API，如有需求需有python基础并自行参照注释文档使用。更多相关信息也请在CONTRIBUTING.md中查看
 
 # WORK-LIST
 

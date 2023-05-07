@@ -1,0 +1,126 @@
+import json
+import codecs
+import os
+
+
+# check translation diff between two version of base, then sync the changes to related version of translantion file
+# notice that sync will remove all outdate ones, all addition will be ignored
+def check_translation_diff (base_lan_dict, base_lan_before_dict, tran_lan_dict):
+    tran_lan_sync_dict = {}
+    diff_report_dict = {}
+    
+    # removed case is ignored
+    for key in base_lan_dict:
+        if type(base_lan_dict[key]) == dict:
+            if key in base_lan_before_dict and key in tran_lan_dict:
+                tran_lan_sync_dict_sub, diff_report_dict_sub = check_translation_diff(base_lan_dict[key], base_lan_before_dict[key], tran_lan_dict[key])
+                if not diff_report_dict_sub == {}:
+                    diff_report_dict[key] = diff_report_dict_sub
+                    tran_lan_sync_dict[key] = tran_lan_sync_dict_sub
+            else:
+                diff_report_dict[key] = base_lan_dict[key]
+        elif key in base_lan_before_dict and base_lan_before_dict[key] == base_lan_dict[key]:
+            tran_lan_sync_dict[key] = tran_lan_dict[key]
+        else:
+            diff_report_dict[key] = base_lan_dict[key]
+            
+    return tran_lan_sync_dict, diff_report_dict
+
+
+# extract old version of translation for ref, diff of original file can be check by git
+def report_translation_diff (tran_lan_dict, diff_report_dict):
+    tran_report_dict = {}
+    for key in diff_report_dict:
+        if type(diff_report_dict[key]) == dict and key in tran_lan_dict:
+            tran_report_dict_sub = report_translation_diff(tran_lan_dict[key], diff_report_dict[key])
+            if not tran_report_dict_sub == {}:
+                tran_report_dict[key] = tran_report_dict_sub
+        elif key in tran_lan_dict:
+            tran_report_dict[key] = tran_lan_dict[key]
+        else:
+            pass
+
+    return tran_report_dict
+
+
+# merge addition_tran into tran_lan_dict, replace by key idx
+def merge_translation (tran_lan_dict, addition_tran):
+    for key in addition_tran:
+        if type(addition_tran[key]) == dict:
+            if key in tran_lan_dict:
+                merge_translation(tran_lan_dict[key], addition_tran[key])
+            else:
+                tran_lan_dict[key] = addition_tran[key]
+        else:
+            tran_lan_dict[key] = addition_tran[key]
+
+
+# main process of the script
+# check base tran diffs, for each diff, report and remove it from translation
+# if have addition_tran, for each diff, report and replace it with addition translation when exists
+
+# translated from report of diff, or can be other missing translations to be merged in
+addition_tran_path = "./local_cmd/base_diff_translation.json"
+print("addition_tran_path: ", addition_tran_path)
+
+if not os.path.exists(addition_tran_path):
+    print("addition translation file not found, will check for diffs")
+
+    # official language file, latest/target version
+    base_lan_path = "./english-official/english.json"
+    # official language file, old version's copy
+    base_lan_before_path = "./local_cmd/english.json"
+    # translated language file, old version's copy, here use the mod's main translate file
+    tran_lan_path = "./local_cmd/base.json"
+
+    # sync translated language file, remove all add/changes from old version's translated language file
+    sync_out_path = "./local_cmd/base_updated.json"
+    # report of diff, translate manual then use for further merge process
+    diff_report_path = "./local_cmd/base_update_report_diff.json"
+    # old translation for report of diff, just for reference, no actual use in scripts
+    ref_report_path = "./local_cmd/base_update_report_ref.json"
+
+    base_lan = json.load(codecs.open(base_lan_path, "r", encoding="utf-8"))
+    base_lan_before = json.load(codecs.open(base_lan_before_path, "r", encoding="utf-8"))
+    tran_lan = json.load(codecs.open(tran_lan_path, "r", encoding="utf-8"))
+
+    # check diff between diff versions of base lang file
+    tran_lan_sync, diff_report = check_translation_diff(base_lan, base_lan_before, tran_lan)
+    tran_report = report_translation_diff(tran_lan, diff_report)
+
+    # this file will keep all translation items without changes/removes, can be seen as fast compatibility version
+    json.dump(tran_lan_sync, codecs.open(sync_out_path, "w", encoding="utf-8"), indent=4, ensure_ascii=False)
+    # this file will found all changes/adds, as the base of additional translation file, waiting for re-translation 
+    json.dump(diff_report, codecs.open(diff_report_path, "w", encoding="utf-8"), indent=4, ensure_ascii=False)
+    # this file will remains all changes of old version's translation, as reference for re-translation work, no other usages
+    json.dump(tran_report, codecs.open(ref_report_path, "w", encoding="utf-8"), indent=4, ensure_ascii=False)
+    
+else:
+    print("addition translation found, will merge diffs")
+
+    # sync translated language file, generated by scripts before
+    base_tran_path = "./local_cmd/base_updated.json"
+    # target output, merged translated language file
+    merged_out_path = "./local_cmd/base_merged.json"
+    # target output of zh-tw, convert from the merged one
+    merged_out_path_zhtw = "./local_cmd/base_merged_tw.json"
+
+    addition_tran = json.load(codecs.open(addition_tran_path, "r", encoding="utf-8"))
+    base_tran = json.load(codecs.open(base_tran_path, "r", encoding="utf-8"))
+
+    merge_translation(base_tran, addition_tran)
+    # this file will keep all translation items without changes/removes, can be seen as fast compatibility version
+    json.dump(base_tran, codecs.open(merged_out_path, "w", encoding="utf-8"), indent=4, ensure_ascii=False)
+
+    from zhconv import convert
+    line_count = 0
+    with codecs.open(merged_out_path, "r", encoding="utf-8") as input:
+        with codecs.open(merged_out_path_zhtw, "w", encoding="utf-8") as output:
+            line = input.readline()
+            output.write(line)
+            line = input.readline()
+            output.write(convert(line.replace("简体", "繁体"), 'zh-tw'))
+            for line in input.readlines():
+                output.write(convert(line, 'zh-tw'))
+
+print("process finished")
