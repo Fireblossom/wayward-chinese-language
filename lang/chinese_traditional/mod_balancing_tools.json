@@ -1,0 +1,25 @@
+{
+	"extends": "繁體中文",
+	"dictionaries": {
+		"modBalancingToolsBalancingTools": {
+			"panelName": "平衡測試工具",
+			"freezeCreatures": "所有生物停止行動",
+			"freezeNPCs": "所有 NPC 停止行動",
+			"setEquipment": "穿戴全套裝備",
+			"setSkills": "設定所有戰鬥相關技藝等級",
+			"spawnCreatureLine": "在一條直線上召喚所有生物"
+		},
+		"modBalancingToolsEquipment": {
+			"bark": "樹皮製",
+			"leather": "皮革制",
+			"tin": "錫制",
+			"scale": "鱗制",
+			"copper": "銅製",
+			"armoredScale": "堅甲制",
+			"wroughtIron": "鑄鐵製",
+			"iron": "精鐵製",
+			"bronze": "青銅製",
+			"blackplate": "黑鋼製"
+		}
+	}
+}

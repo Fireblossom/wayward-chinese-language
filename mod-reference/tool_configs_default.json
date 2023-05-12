@@ -1,0 +1,60 @@
+{
+    "update_process_paths": {
+        "active":false,
+        "in":{
+            "official_prev_ver": "./script_data/english.json",
+            "official_latest_ver": "./english-official/english.json",
+            "translation_prev_ver": "./script_data/base.json"
+        },
+        "out":{
+            "translation_sync": "./script_data/updated_base.json",
+            "report_diff": "./script_data/updated_report_diff.json",
+            "report_refer": "./script_data/updated_report_refer.json"
+        }
+    },
+    "check_process_paths":{
+        "active":false,
+        "translation_prev_ver": "./script_data/base.json",
+        "official_latest_ver": "./english-official/english.json",
+        "report_miss": "./script_data/check_report_miss.json"
+    },
+    "merge_process_paths": {
+        "active":false,
+        "addition_translations": "./script_data/addition_translation.json",
+        "translation_prev_ver": "./script_data/updated_base.json",
+        "merged_out_path": "./script_data/merged_base.json"
+    },
+    "convert_process_paths": {
+        "active":false,
+        "inputs":"./../lang/chinese_simple",
+        "outputs":"./../lang/chinese_traditional"
+    },
+    
+    "translate_exceptions": {
+        "dictionaries": {
+            "humanName":null,
+            "input":null
+        }
+    },
+    "translate_special_cases":{
+        "pluralizationRules": {
+            "pluralRules": [],
+            "singularRules": [],
+            "uncountables": [],
+            "irregularRules": [],
+            "articleRules": {
+                "definite": [],
+                "indefinite": []
+            }
+        },
+        "contextRules": {
+            "isWord": "",
+            "isWordSeparator": "",
+            "isSentenceSeparator": "",
+            "shouldCapitalizeWord": ""
+        }
+
+    }
+
+
+}
