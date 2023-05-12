@@ -147,7 +147,9 @@ X.X.X.0 版本计划对应于通过脚本自动在游戏更新后生成的临时
 繁体中文生成 与 Version Update Tool 均在\mod-reference 下的 translate_tools.py 中实现
 运行是基于py 3.11下，该简易脚本并未实现api接口，路径等设置如需修改需要手动检查，默认为 cd 至mod-reference后的相对路径
 
-默认需要旧版的official-eng以及对应的翻译文件，默认目标版本为\mod-reference下从官方git中拉取的英文文本，其他输出文件及部分中间文件或需要手动修改的追加翻译文件默认在 local_cmd 下，请自行确认
+默认需要旧版的official-eng以及对应的翻译文件，默认目标版本为\mod-reference下从官方git中拉取的英文文本=
+
+特别注意，运行前请将默认config复制至script_data中并确认配置中的各项路径，否则无法正常运行
 
 以下提供两个脚本的简易思路，具体说明请参考代码中的注释
 
@@ -156,11 +158,13 @@ X.X.X.0 版本计划对应于通过脚本自动在游戏更新后生成的临时
 简繁转换使用 python 的 zhconv 项目来自动生成，当前目标繁体设置为 zh-tw
 zhconv 中无任何额外设置，所有选项均为默认
 
-## Version Update Tool
+## Version Update Tools
 
-在游戏更新后，原始的英文文本也会在[GITHUB:WaywardGame/english-language](https://github.com/WaywardGame/english-language)中同步更新，此时需要对文本变更部分进行更补。
-
-此工具用于在大版本更新后原英文产生大量变更时辅助更新，也可在翻译未完成时，生成临时的中英混杂的文本
+脚本工具集提供4组功能，对应不同场景使用：
++ 在大版本更新后原英文产生大量变更时辅助更新时，原始的英文文本也会在[GITHUB:WaywardGame/english-language](https://github.com/WaywardGame/english-language)中同步更新，此时需要对文本增删改三部分进行对应的更补。
++ 在本地进行翻译的过程中，需要比对原本与新版本格式对应的汉化文本，以确认未翻译部分的文档
++ 在完成翻译后，需要将新翻译的部分与之前的版本进行合并
++ 在发布更新前，需要自动生成繁体版本
 
 ### 原理 & 机制 & 功能
 
