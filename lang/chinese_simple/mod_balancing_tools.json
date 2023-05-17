@@ -5,9 +5,12 @@
 			"panelName": "平衡测试工具",
 			"freezeCreatures": "所有生物停止行动",
 			"freezeNPCs": "所有 NPC 停止行动",
+			"equipmentQuality": "装备品质",
 			"setEquipment": "穿戴全套装备",
 			"setSkills": "设定所有战斗相关技艺等级",
-			"spawnCreatureLine": "在一条直线上召唤所有生物"
+			"spawnCreatureLine": "在一条直线上召唤所有生物",
+			"disableAttackCreatures": "生物禁止攻击",
+			"disableAttackNPCs": "NPC 禁止攻击"
 		},
 		"modBalancingToolsEquipment": {
 			"bark": "树皮制",

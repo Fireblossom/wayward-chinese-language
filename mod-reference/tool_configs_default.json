@@ -33,7 +33,10 @@
     "translate_exceptions": {
         "dictionaries": {
             "humanName":null,
-            "input":null
+            "input":null,
+            "ui":{
+                "menuChangelogHeadingUnchartedWaters":null
+            }
         }
     },
     "translate_special_cases":{

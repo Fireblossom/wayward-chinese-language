@@ -1,10 +1,10 @@
 {
     "name": "Wayward 中文补丁",
     "description": "Wayward 全文本汉化",
-    "version": "2.12.3.1",
+    "version": "2.13.1.1",
     "author": "柯箴之",
     "github": "https://github.com/PlotNarrater/wayward-chinese-language",
-    "waywardVersion": "2.13.0-beta",
+    "waywardVersion": "2.13.1-beta",
     "languages": [
         "lang/chinese_simple/base",
         "lang/chinese_simple/mod_starter_quest",
