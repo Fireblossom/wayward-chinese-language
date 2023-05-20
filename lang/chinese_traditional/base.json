@@ -608,7 +608,7 @@
             "gameActionHarvest": "收穫",
             "gameActionChop": "砍伐",
             "gameActionMine": "採掘",
-            "gameActionMelee": "Melee",
+            "gameActionMelee": "近戰攻擊",
             "gameActionGatherLiquid": "灌裝液體",
             "gameActionAttachContainer": "安裝容器",
             "gameActionDetachContainer": "取下容器",
@@ -5298,7 +5298,7 @@
             "tool": "工具",
             "weapon": "武器",
             "health": "回復物品",
-            "travel": "旅行用具",
+            "travel": "交通",
             "housing": "建築構件",
             "heating": "加熱用具",
             "storage": "儲物容器",
@@ -5339,7 +5339,7 @@
             "cookedFood": "料理",
             "litCandle": "點燃的蠟燭",
             "liquidContainer": "液體容器",
-            "frozenWater": "冰水",
+            "frozenWater": "冰塊",
             "rawFish": "生魚",
             "insect": "蟲類",
             "upgrading": "升格材料",
@@ -5379,7 +5379,24 @@
             "twoHanded": "雙持",
             "boat": "船",
             "all": "全部",
-            "last": "最近"
+            "last": "最近",
+            "text": "文卷",
+            "containerWithLiquid": "裝有液體的容器",
+            "craftingMaterial": "製作材料",
+            "magicalComponent": "魔素",
+            "scarecrow": "稻草人",
+            "well": "井",
+            "mapping": "繪圖",
+            "terrain": "地塊",
+            "lighthouse": "燈塔",
+            "seedBearer": "苗種",
+            "mushroom": "蘑菇",
+            "lockpick": "撬鎖工具",
+            "waterPurification": "淨水器",
+            "creatureContainment": "生物圍籠",
+            "gem": "寶石",
+            "golem": "魔像",
+            "creatureResource": "生物材料"
         },
         "joinServerRetryReason": {
             "timeout": "伺服器連接超時.",
@@ -6329,7 +6346,8 @@
             "movedItem": "你把 {0} 移動到 {1} 中.",
             "noRoomToDrop": "沒有足夠的空間來丟棄 {0}.",
             "noRoomToSummon": "沒有足夠的空間來召喚 {0}!",
-            "placedOnGround": "你把 {0} 放到了地上."
+            "placedOnGround": "你把 {0} 放到了地上.",
+            "sortedByCraftableOnly": "已對 {0}{1} 中可製作的物品按名稱排序."
         },
         "messagesDefaultFilter": {
             "all": "所有",
@@ -6588,7 +6606,8 @@
             "treasure": "寶藏",
             "metagame": "傳載",
             "turns": "回合",
-            "challenge": "挑戰"
+            "challenge": "挑戰",
+            "merchants": "商隊"
         },
         "milestoneSort": {
             "name": "名稱",
@@ -6637,7 +6656,8 @@
             "tilled": "耕作過的 {0}",
             "unknown": "未知",
             "unknownItem": "未知物品",
-            "tile": "{0}{1? ({2},{3},{4})}"
+            "tile": "{0}{1? ({2},{3},{4})}",
+            "creatureSubtitle": "{0} 生物"
         },
         "modLoadError": {
             "modLoadError": "加載模組時發生錯誤",
@@ -7833,7 +7853,7 @@
             "gameTooltipItemMagicalSource": "來自: 魔法屬性 {0}.",
             "gameTooltipItemGroupingsLabel": "類屬",
             "gameTooltipItemGroup": "{0}{1? {1}}",
-            "gameTooltipItemLabelUsesWhenBuilt": "建造時使用",
+            "gameTooltipItemLabelUsesWhenBuilt": "搭建後使用",
             "gameTooltipItemWorth": "價值",
             "gameTooltipItemProtected": "已鎖定",
             "gameTooltipItemProtectedContainer": "存放於被鎖定的容器",
