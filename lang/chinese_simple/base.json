@@ -451,6 +451,66 @@
             "protectItem": [
                 "锁定",
                 "保护物品免于被消耗或摧毁.\n- 无法用于制作时的消耗.\n- 无法被用于执行任何可能导致被消耗或摧毁的行动，包括: 分解、拆卸、添火、食用等.\n- 在耐久为 0 时，无法被用作制造工具且会自动解除装备.\n- 无法被丢下、投掷，或执行其他可能导致该物品遗损的操作.\n- 不会在快捷行动的自动补货时使用."
+            ],
+            "drop": [
+                "丢下",
+                "依照你所处环境及相关设置，将物品丢在面前的地格上、身下或是储物容器中."
+            ],
+            "jump": [
+                "跳",
+                "跳过一个地格，该行动可以使你穿过某些生物、摆设或是地格. 此行动消耗的体力取决于你的强壮及重量."
+            ],
+            "drinkInFront": [
+                "喝下眼前的液体",
+                "饮用你面前水源中的液体."
+            ],
+            "unequip": [
+                "卸下",
+                "卸下你装备的工具、武器或是护甲. 该行动不会消耗回合数."
+            ],
+            "moveItem": [
+                "移动物品",
+                "将物品移动至一个打开的储物容器页面之中."
+            ],
+            "rename": [
+                "重命名",
+                "为物品、生物或是设备摆件赋予新的名称."
+            ],
+            "closeContainer": [
+                "关闭容器",
+                "关闭某个容器，现在你可以不再关注它了."
+            ],
+            "trade": [
+                "交易",
+                "与你面前的商人进行交易."
+            ],
+            "detachContainer": [
+                "取下容器",
+                "从蒸馏器上取下装水的容器."
+            ],
+            "pickUpExcrement": [
+                "捡起排泄物",
+                "用你的双手从面前的地格上捡起排泄物."
+            ],
+            "unProtectItem": [
+                "解除锁定",
+                "解除物品的锁定状态，此后所有锁定提供的约束与便利均不再生效."
+            ],
+            "toggleHitch": [
+                "拴住/解开",
+                "拴住某个生物或是解开它的束缚（如果它已经被拴住的话）."
+            ],
+            "toggleDoor": [
+                "撑开/合上 {0?闸门:门}",
+                "切换闸门或门的开关状态."
+            ],
+            "toggleContainer": [
+                "打开/关闭 容器",
+                "切换容器的开合状态."
+            ],
+            "propOpenDoor": [
+                "撑开{0?闸门:门}",
+                "撑住某扇闸门或门，以允许各种实体自由穿行."
             ]
         },
         "actionSort": {
@@ -688,7 +748,8 @@
             "developerReloadGame": "重新加载游戏",
             "developerReloadAndContinueGame": "重载并继续游戏",
             "developerReloadStylesheets": "重新加载 Stylesheets",
-            "developerReloadVariableUIImages": "重新加载 Variable UI Images"
+            "developerReloadVariableUIImages": "重新加载 Variable UI Images",
+            "menuMoreInformation": "显示详细信息"
         },
         "bindableType": {
             "game": "基础操作",
@@ -1105,7 +1166,8 @@
             "quests": "任务",
             "crafting": "制作",
             "inspect": "检查",
-            "equipment": "装备"
+            "equipment": "装备",
+            "islandsSail": "岛屿"
         },
         "direction": {
             "east": "东",
@@ -1737,11 +1799,63 @@
             "spikerush": [
                 "荸荠",
                 "一种无叶片的草，有浓密的木质鞘，以及独特的球根与纤维状的花."
+            ],
+            "woodenBookcase": [
+                "木质书架",
+                "一组结实的木质书架，可以摆放各种书籍或笔记文献."
+            ],
+            "graniteLighthouse": [
+                "石制灯塔",
+                "高耸的岩石灯塔屹立在风雨中，若它燃起火光，便会指引附近的航者抵达此地."
+            ],
+            "litGraniteLighthouse": [
+                "点燃的石制灯塔",
+                "岩石灯塔已被点亮，熊熊火光将为附近的航者指引方向."
+            ],
+            "sandstoneLighthouse": [
+                "砂石灯塔",
+                "没有升起火光的砂石灯塔与一柱巨硕的圆石相差无几."
+            ],
+            "litSandstoneLighthouse": [
+                "点燃的砂石灯塔",
+                "砂石堆砌的灯塔已被点燃，火光从石柱顶端跃升而出，将水手指引着它的方向."
+            ],
+            "clayLighthouse": [
+                "黏土灯塔",
+                "一座由黏土砖块砌成方尖碑的式样的灯塔."
+            ],
+            "litClayLighthouse": [
+                "点燃的黏土灯塔",
+                "火焰于它的顶端升起，为附近的航行者提供指引."
+            ],
+            "basaltLighthouse": [
+                "火山岩灯塔",
+                "用大块的火山岩堆砌的灯塔，直冲云霄."
+            ],
+            "litBasaltLighthouse": [
+                "点燃的火山岩灯塔",
+                "对那些疯狂的穿行在这片海洋的人来说，这闪耀的光辉无疑是指路的明灯."
             ]
         },
         "doodadExtra": {
             "none": [
                 "",
+                ""
+            ],
+            "woodenBookcase25": [
+                "摆了一两本书的木质书架",
+                ""
+            ],
+            "woodenBookcase50": [
+                "摆了几本书的木质书架",
+                ""
+            ],
+            "woodenBookcase75": [
+                "摆了很多书的木质书架",
+                ""
+            ],
+            "woodenBookcase100": [
+                "摆满了书的木质书架",
                 ""
             ]
         },
@@ -1759,7 +1873,11 @@
             "lightDevice": "照明设备",
             "lightSource": "光源",
             "litStructure": "有照明的建筑物",
-            "lockedChest": "锁住的箱子"
+            "lockedChest": "锁住的箱子",
+            "invalid": "",
+            "scarecrow": "稻草人",
+            "lighthouse": "灯塔",
+            "litLighthouse": "点燃的灯塔"
         },
         "drawnMapTheme": {
             "paper": "莎纸",
@@ -2104,7 +2222,8 @@
             "discoveredTime": "发现时间",
             "worth": "价值",
             "bestForCrafting": "最适合制造",
-            "magical": "魔法属性"
+            "magical": "魔法属性",
+            "craftableOnly": "仅可制作(筛选时无效)"
         },
         "islandModifier": {
             "overrunWithCreature": "{0}泛滥"
@@ -5085,6 +5204,30 @@
             "spikerushSeeds": [
                 "荸荠的种子",
                 "荸荠花中的纤维状的种芽."
+            ],
+            "tinOre": [
+                "锡矿石",
+                "一块含有大量杂质的锡原矿. 熔铸成锭后就能打制成软甲、各种工具或者武器."
+            ],
+            "woodenBookcase": [
+                "木质书架",
+                "一组用来摆放寻获的各种书籍文献或其他小件物品的简易木架."
+            ],
+            "graniteLighthouse": [
+                "石制灯塔",
+                "岩石构成的主体巨硕而坚固，它顶端燃起的火焰以光芒引导海上的船只安全靠岸."
+            ],
+            "sandstoneLighthouse": [
+                "砂石灯塔",
+                "砂石建造的灯塔，一种通常位于海岸的设施，利用它燃起的火光定位会使航行更加轻松."
+            ],
+            "clayLighthouse": [
+                "黏土灯塔",
+                "一座由烧制的黏土砖块砌成的高大灯塔."
+            ],
+            "basaltLighthouse": [
+                "火山岩灯塔",
+                "玄武岩柱为灯塔高耸的结构提供了坚实支撑."
             ]
         },
         "itemExtra": {
@@ -5098,6 +5241,22 @@
             ],
             "tatteredMapCompleted": [
                 "探索过的残损地图",
+                ""
+            ],
+            "woodenBookcase25": [
+                "摆了一两本书的木质书架",
+                ""
+            ],
+            "woodenBookcase50": [
+                "摆了几本书的木质书架",
+                ""
+            ],
+            "woodenBookcase75": [
+                "摆了很多书的木质书架",
+                ""
+            ],
+            "woodenBookcase100": [
+                "摆满了书的木质书架",
                 ""
             ]
         },
@@ -8326,7 +8485,14 @@
             "tabCrafting": "制造",
             "tabDismantle": "分解",
             "windowTitleContainer": "容器",
-            "windowTitleInventory": "行李"
+            "windowTitleInventory": "行李",
+            "gameTooltipCreatureLabelTamed": "驯服于",
+            "gameTooltipCreatureLabelMood": "心情",
+            "gameTooltipCreatureLabelCommand": "指令",
+            "gameTooltipCreatureLabelAberrant": "变异的",
+            "gameTooltipCreatureAberrantDescriptionShort": "领地意识强烈，且极其好斗.",
+            "gameTooltipCreatureAberrantDescriptionExtra": "这个生物领地意识强烈，且极其好斗; 它会造成更沉重的伤害，而且生存力也比同类更加坚韧.",
+            "gameTooltipCreatureAberrantDescriptionVerbose": "袭击 {#--TEXT-PRIMARY:弱点} 可能是击败它的唯一方法.\n它确实也有被 {#--TEXT-PRIMARY:驯服} 的可能性... 尽管它的友善无法持续太久."
         },
         "uiQuadrant": {
             "none": "Storage",
@@ -8414,7 +8580,8 @@
             "none": [
                 "无行动",
                 "{0?使用 {BINDINGS:GameActionBarConfigure} 为该格位分配一个行动.}"
-            ]
+            ],
+            "commandMenu": "指挥"
         },
         "website": {
             "twitter": "Twitter",
