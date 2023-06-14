@@ -1858,6 +1858,46 @@
             "litBasaltLighthouse": [
                 "点燃的火山岩灯塔",
                 "对那些疯狂的穿行在这片海洋的人来说，这闪耀的光辉无疑是指路的明灯."
+            ],
+            "tinWaterStill": [
+                "锡制蒸馏器",
+                "由锡制成，点火后可用于制备蒸馏水."
+            ],
+            "litTinWaterStill": [
+                "点燃的锡制蒸馏器",
+                "正生着火，通过蒸发制取蒸馏水."
+            ],
+            "copperWaterStill": [
+                "铜制蒸馏器",
+                "由铜制成，点火煮沸后可制备蒸馏水."
+            ],
+            "litCopperWaterStill": [
+                "点燃的铜制蒸馏器",
+                "正生着火，正通过蒸馏制取净水."
+            ],
+            "wroughtIronWaterStill": [
+                "铸铁蒸馏器",
+                "由铸铁制成，点火煮沸后可制备蒸馏水."
+            ],
+            "litWroughtIronWaterStill": [
+                "点燃的铸铁蒸馏器",
+                "正生着火，其内盛放的水正被淡化."
+            ],
+            "ironWaterStill": [
+                "精铁蒸馏器",
+                "由精铁制成，点火后可制备蒸馏水."
+            ],
+            "litIronWaterStill": [
+                "点燃的精铁蒸馏器",
+                "正生着火，表面已经变得滚烫，随时可用于制备蒸馏水."
+            ],
+            "bronzeWaterStill": [
+                "青铜蒸馏器",
+                "由青铜制成，点火后可制备蒸馏水."
+            ],
+            "litBronzeWaterStill": [
+                "点燃的青铜蒸馏器",
+                "正生着火，将水煮沸成蒸汽后再冷凝，以此去除其中的盐分或杂质."
             ]
         },
         "doodadExtra": {
@@ -1900,7 +1940,8 @@
             "lockedChest": "锁住的箱子",
             "scarecrow": "稻草人",
             "lighthouse": "灯塔",
-            "litLighthouse": "点燃的灯塔"
+            "litLighthouse": "点燃的灯塔",
+            "waterStill": "蒸馏器"
         },
         "drawnMapTheme": {
             "paper": "莎纸",
@@ -5241,6 +5282,26 @@
             "basaltLighthouse": [
                 "火山岩灯塔",
                 "玄武岩柱为灯塔高耸的结构提供了坚实支撑."
+            ],
+            "tinWaterStill": [
+                "锡制蒸馏器",
+                "由锡制成的烧水设备. 通过蒸馏过程来淡化海水，纯化后的水会被收集到单独的容器中."
+            ],
+            "copperWaterStill": [
+                "铜制蒸馏器",
+                "通过蒸馏过程来淡化海水，纯化后的水会被收集到单独的容器中."
+            ],
+            "wroughtIronWaterStill": [
+                "铸铁蒸馏器",
+                "铸铁打制成锅形并加了个盖子. 通过蒸馏过程来淡化海水，纯化后的水会被收集到单独的容器中."
+            ],
+            "ironWaterStill": [
+                "精铁蒸馏器",
+                "用于从海中获取可饮用的水. 这种精铁做成的蒸馏器需要更长时间来加热，但相应地比起同类也更经久耐用."
+            ],
+            "bronzeWaterStill": [
+                "青铜蒸馏器",
+                "由青铜制成，通过蒸馏过程来纯化海水."
             ]
         },
         "itemExtra": {
@@ -5408,7 +5469,9 @@
             "golem": "魔像",
             "creatureResource": "生物材料",
             "all": "全部",
-            "last": "最近"
+            "last": "最近",
+            "notStockedOnMerchants": "商队无货",
+            "dripstone": "滤石"
         },
         "joinServerRetryReason": {
             "timeout": "服务器连接超时.",
@@ -6351,7 +6414,21 @@
             "youTilled": "你开垦了 {0}.",
             "youUnequip": "你卸下了 {0}.",
             "youUsed": "你使用了 {0}!",
-            "youWhileTraveling": "你在旅行期间 {0...}."
+            "youWhileTraveling": "你在旅行期间 {0...}.",
+            "notEnoughPurifiedWaterYet": "{0} 里还没有足够可用的净水.",
+            "noWaterInStill": "{0} 里没有水.",
+            "nPCMerchantStartingDialog1": "你好啊! 在这附近能见到别人真是太好了. 让我们互相帮忙，或者看看有什么能交换的东西.",
+            "nPCMerchantStartingDialog2": "日安! 如果我们能互通有无，也许可以在这里活得更轻松点.",
+            "nPCMerchantStartingDialog3": "哦! 你吓到我了! 我从没想到在这里还能找到另一个迷失者. 想交换点什么吗?",
+            "nPCMerchantStartingDialog4": "嗨! 我在远处就注意到你了，只是出于谨慎保持了一定距离. 我们来交换点什么吧，还是说你果然是不怀好意?",
+            "nPCMerchantWelcomeCredit": "欢迎回来! 想用点券换点什么?",
+            "pouredWaterIntoStill": "你把 {0??水} 倒进了 {1??蒸馏器} 里.",
+            "purifiedWaterInStill": "{0} 里装着净化过的水.",
+            "solarStill": "日光蒸馏器",
+            "still": "蒸馏器",
+            "unpurifiedWaterInStill": "{0} 里装着还没净化的水.",
+            "youCrafted": "你 {0} {1}{2??}!",
+            "youFailedTo": "由于技艺水平不足，你 {0} {1} 失败了.{2??}"
         },
         "messagesDefaultFilter": {
             "all": "所有",
@@ -7217,7 +7294,28 @@
                 "暂未支持 Steam Deck.",
                 "此功能在 Steam Deck 上暂不可用."
             ],
-            "uiSaveDrop": "将存档文件拖到此处..."
+            "uiSaveDrop": "将存档文件拖到此处...",
+            "gameCannotRunGlError": "Wayward 无法在当前系统或浏览器中运行.",
+            "gameDesalinationNoNeed": [
+                "这类水无需淡化.",
+                "你确定要把它倒入 {0} 中进行淡化?"
+            ],
+            "gamePickUpStillWithWater": [
+                "{0} 中已经有水了.",
+                "你确定要倒掉里面的水来拿起它吗?"
+            ],
+            "gameSolarStillWontWorkInTemperature": [
+                "{0} 在没有热源导致温度不够高时不会工作.",
+                "你仍然要把它搭建在这里么?"
+            ],
+            "multiplayerDisconnect": [
+                "{0}",
+                "{1??}"
+            ],
+            "multiplayerDisconnectRejoin": [
+                "{0}\n尝试重新加入游戏?",
+                "{1??}"
+            ]
         },
         "quadrantComponent": {
             "messages": "消息",
@@ -7454,7 +7552,11 @@
             "happiness": "幸福度",
             "tamed": "驯服的",
             "petting": "爱抚",
-            "waste": "排泄"
+            "waste": "排泄",
+            "reputation": [
+                "声誉",
+                "影响那些追逐你身影的生物的强度，以及你生存的难度."
+            ]
         },
         "statusEffect": {
             "bleeding": [
@@ -8474,7 +8576,20 @@
             "tabCrafting": "制造",
             "tabDismantle": "分解",
             "windowTitleContainer": "容器",
-            "windowTitleInventory": "行李"
+            "windowTitleInventory": "行李",
+            "gameDialogContainerWeight": "({0}/{1})",
+            "gameDialogContainerTrade": "与 {0} 交易",
+            "gameDialogContainerTradeCredit": "[点券: {0}]",
+            "gameTooltipDefenseInsulationWeight": " ({0}{1?, {1}})",
+            "gameStatsStatReputationTooltipReputation": "声誉",
+            "gameStatsStatReputationTooltipAverageReputation": "平均声誉",
+            "gameStatsStatReputationTooltipScore": "分数",
+            "gameStatsStatReputationTooltipCivilizationScore": "文明度",
+            "gameStatsStatReputationTooltipTurn": "回合",
+            "gameStatsStatReputationTooltipTicks": "Ticks",
+            "menuMultiplayerServerModInfo": "{name}@{version}",
+            "menuOptionsButtonDropOnDisassemble": "拆卸时丢下",
+            "menuOptionsButtonDropOnDisassembleTooltip": "勾选后，在拆卸物品时，将自动把物品丢弃在角色脚下."
         },
         "uiQuadrant": {
             "none": "Storage",
@@ -8555,6 +8670,14 @@
             "none": [
                 "无行动",
                 "{0?使用 {BINDINGS:GameActionBarConfigure} 为该格位分配一个行动.}"
+            ],
+            "itemActions": [
+                "使用物品",
+                "使用 \"最\" 合适的物品来执行某些操作."
+            ],
+            "actions": [
+                "进行动作",
+                "执行基本的行动."
             ]
         },
         "website": {
