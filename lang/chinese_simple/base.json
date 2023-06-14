@@ -7,6 +7,10 @@
                 "拆卸",
                 "将物品分解为制作时使用的素材"
             ],
+            "pickUp": [
+                "卸除 {0??摆设}",
+                "把摆设从地格上拆卸下来，并存入你的行李中."
+            ],
             "throw": [
                 "投掷",
                 "向你面前投掷物品，伤害、投掷距离与消耗的体力与多种因素有关. \n- 物品重量.\n- 你的投掷技艺等级\n- 物品是否拥有 \"{MAGICAL_PROPERTY_TYPE:THROWING_BONUS}\" 的魔法属性."
@@ -184,6 +188,18 @@
                 "挤压",
                 "使用时会消耗物品，往你面前喷出一串火焰."
             ],
+            "pet": [
+                "抚摸",
+                "抚摸某个生物，以提高其幸福度，加速其生产，或者有时也可激发它独特的才能."
+            ],
+            "tame": [
+                "驯化",
+                "用双手与平和的声音尝试同你面前的生物进行沟通."
+            ],
+            "release": [
+                "释放",
+                "让生物离开你的身边. 它将迅速野化并回归自然."
+            ],
             "healOther": [
                 "治疗目标",
                 "消耗物品以恢复生物或人类的生命."
@@ -200,13 +216,37 @@
                 "",
                 ""
             ],
+            "closeDoor": [
+                "合上{0?闸门:门}",
+                "合上门或是闸门，阻拦任何它面前的实体."
+            ],
+            "addFuel": [
+                "添加燃料",
+                "消耗燃料来增加其持续时间."
+            ],
             "grasp": [
                 "抓取",
                 "出于安全考虑，用别的物品来抓取物品，例如在抓取在火中的物品."
             ],
+            "pickUpItem": [
+                "捡起 {0??物品}",
+                "从你面前的地格上捡起一个物品."
+            ],
+            "pickUpAllItems": [
+                "捡起所有物品",
+                "捡起你面前地格上的所有物品."
+            ],
             "offer": [
                 "赠予",
                 "把物品赠予你面前的生物. 成功率及目标友善态度的持续时间与多种因素有关.\n- 你的驯养技艺.\n- 生物是否产生了变异或是异常好斗.\n- 赠予的东西是否有魔法属性 \"{MAGICAL_PROPERTY_TYPE:OFFERING}\"."
+            ],
+            "drop": [
+                "丢下",
+                "依照你所处环境及相关设置，将物品丢在面前的地格上、身下或是储物容器中."
+            ],
+            "jump": [
+                "跳",
+                "跳过一个地格，该行动可以使你穿过某些生物、摆设或是地格. 此行动消耗的体力取决于你的强壮及重量."
             ],
             "move": [
                 "",
@@ -224,9 +264,21 @@
                 "",
                 ""
             ],
+            "drinkInFront": [
+                "喝下眼前的液体",
+                "饮用你面前水源中的液体."
+            ],
             "equip": [
                 "装备",
                 "将护甲、武器或工具穿戴在合适的部位上."
+            ],
+            "unequip": [
+                "卸下",
+                "卸下你装备的工具、武器或是护甲. 该行动不会消耗回合数."
+            ],
+            "moveItem": [
+                "移动物品",
+                "将物品移动至一个打开的储物容器页面之中."
             ],
             "craft": [
                 "制造",
@@ -237,6 +289,10 @@
                 "耕种你面前的地面，使它更容易令作物生长.",
                 "- 提高成功概率.\n- 增加相关技艺的成长.\n- 增加获得的声誉点数.\n- 降低消耗的体力."
             ],
+            "rename": [
+                "重命名",
+                "为物品、生物或是设备摆件赋予新的名称."
+            ],
             "harvest": [
                 "收获",
                 "收割附近植物或蘑菇的果实而非彻底摧毁它们.",
@@ -246,10 +302,18 @@
                 "阅读",
                 "打开书并阅读其内容."
             ],
+            "closeContainer": [
+                "关闭容器",
+                "关闭某个容器，现在你可以不再关注它了."
+            ],
             "smotherFire": [
                 "灭火",
                 "用它覆盖在眼前的格子上来熄灭火焰.",
                 "- 提高成功概率.\n- 增加相关技艺的成长.\n- 增加获得的声誉点数.\n- 降低消耗的体力."
+            ],
+            "trade": [
+                "交易",
+                "与你面前的商人进行交易."
             ],
             "placeDown": [
                 "放置",
@@ -271,10 +335,18 @@
                 "安装容器",
                 "将一个容器安装到你面前的摆设上面."
             ],
+            "detachContainer": [
+                "取下容器",
+                "从蒸馏器上取下装水的容器."
+            ],
             "refine": [
                 "精炼",
                 "提纯物品以减轻其重量.",
                 "- 提高成功概率.\n- 增加相关技艺的成长.\n- 降低消耗的体力.\n- 限制最大耐久的损伤."
+            ],
+            "pickUpExcrement": [
+                "捡起排泄物",
+                "用你的双手从面前的地格上捡起排泄物."
             ],
             "testDepth": [
                 "验井",
@@ -300,6 +372,14 @@
             "respawn": [
                 "",
                 ""
+            ],
+            "protectItem": [
+                "锁定",
+                "保护物品免于被消耗或摧毁.\n- 无法用于制作时的消耗.\n- 无法被用于执行任何可能导致被消耗或摧毁的行动，包括: 分解、拆卸、添火、食用等.\n- 在耐久为 0 时，无法被用作制造工具且会自动解除装备.\n- 无法被丢下、投掷，或执行其他可能导致该物品遗损的操作.\n- 不会在快捷行动的自动补货时使用."
+            ],
+            "unProtectItem": [
+                "解除锁定",
+                "解除物品的锁定状态，此后所有锁定提供的约束与便利均不再生效."
             ],
             "updateItemOrder": [
                 "",
@@ -328,6 +408,10 @@
                 "对特定的魔法物品使用，将其魔法属性在同类属性中变化.",
                 "- 提高成功概率.\n- 增加相关技艺的成长.\n- 增加获得的声誉点数.\n- 降低消耗的体力."
             ],
+            "sailToIsland": [
+                "{0?游:航}向{1?港口:岛屿}",
+                "{1?导引至该岛的特定港口:启程{0?游:航}至另一岛屿}."
+            ],
             "unused1": [
                 "",
                 ""
@@ -346,9 +430,21 @@
                 "从临近的资源地格或摆设中收集物品，在这一过程中会摧毁目标.",
                 "- 提高成功概率.\n- 增加相关技艺的成长.\n- 提高所得物的数量及品质.\n- {#--COLOR-BAD:增加损耗的声誉点数.}"
             ],
+            "toggleHitch": [
+                "拴住/解开",
+                "拴住某个生物或是解开它的束缚（如果它已经被拴住的话）."
+            ],
             "toggleVehicle": [
                 "",
                 ""
+            ],
+            "toggleDoor": [
+                "撑开/合上 {0?闸门:门}",
+                "切换闸门或门的开关状态."
+            ],
+            "toggleContainer": [
+                "打开/关闭 容器",
+                "切换容器的开合状态."
             ],
             "updateOption": [
                 "",
@@ -396,6 +492,10 @@
                 "",
                 ""
             ],
+            "propOpenDoor": [
+                "撑开{0?闸门:门}",
+                "撑住某扇闸门或门，以允许各种实体自由穿行."
+            ],
             "damageMap": [
                 "",
                 ""
@@ -403,118 +503,6 @@
             "noclip": [
                 "",
                 ""
-            ],
-            "setCreatureAi": [
-                "",
-                ""
-            ],
-            "setTitle": [
-                "",
-                ""
-            ],
-            "nPCInteract": [
-                "",
-                ""
-            ],
-            "pickUp": [
-                "卸除 {0??摆设}",
-                "把摆设从地格上拆卸下来，并存入你的行李中."
-            ],
-            "pet": [
-                "抚摸",
-                "抚摸某个生物，以提高其幸福度，加速其生产，或者有时也可激发它独特的才能."
-            ],
-            "tame": [
-                "驯化",
-                "用双手与平和的声音尝试同你面前的生物进行沟通."
-            ],
-            "release": [
-                "释放",
-                "让生物离开你的身边. 它将迅速野化并回归自然."
-            ],
-            "closeDoor": [
-                "合上{0?闸门:门}",
-                "合上门或是闸门，阻拦任何它面前的实体."
-            ],
-            "addFuel": [
-                "添加燃料",
-                "消耗燃料来增加其持续时间."
-            ],
-            "pickUpItem": [
-                "捡起 {0??物品}",
-                "从你面前的地格上捡起一个物品."
-            ],
-            "pickUpAllItems": [
-                "捡起所有物品",
-                "捡起你面前地格上的所有物品."
-            ],
-            "protectItem": [
-                "锁定",
-                "保护物品免于被消耗或摧毁.\n- 无法用于制作时的消耗.\n- 无法被用于执行任何可能导致被消耗或摧毁的行动，包括: 分解、拆卸、添火、食用等.\n- 在耐久为 0 时，无法被用作制造工具且会自动解除装备.\n- 无法被丢下、投掷，或执行其他可能导致该物品遗损的操作.\n- 不会在快捷行动的自动补货时使用."
-            ],
-            "drop": [
-                "丢下",
-                "依照你所处环境及相关设置，将物品丢在面前的地格上、身下或是储物容器中."
-            ],
-            "jump": [
-                "跳",
-                "跳过一个地格，该行动可以使你穿过某些生物、摆设或是地格. 此行动消耗的体力取决于你的强壮及重量."
-            ],
-            "drinkInFront": [
-                "喝下眼前的液体",
-                "饮用你面前水源中的液体."
-            ],
-            "unequip": [
-                "卸下",
-                "卸下你装备的工具、武器或是护甲. 该行动不会消耗回合数."
-            ],
-            "moveItem": [
-                "移动物品",
-                "将物品移动至一个打开的储物容器页面之中."
-            ],
-            "rename": [
-                "重命名",
-                "为物品、生物或是设备摆件赋予新的名称."
-            ],
-            "closeContainer": [
-                "关闭容器",
-                "关闭某个容器，现在你可以不再关注它了."
-            ],
-            "trade": [
-                "交易",
-                "与你面前的商人进行交易."
-            ],
-            "detachContainer": [
-                "取下容器",
-                "从蒸馏器上取下装水的容器."
-            ],
-            "pickUpExcrement": [
-                "捡起排泄物",
-                "用你的双手从面前的地格上捡起排泄物."
-            ],
-            "unProtectItem": [
-                "解除锁定",
-                "解除物品的锁定状态，此后所有锁定提供的约束与便利均不再生效."
-            ],
-            "toggleHitch": [
-                "拴住/解开",
-                "拴住某个生物或是解开它的束缚（如果它已经被拴住的话）."
-            ],
-            "toggleDoor": [
-                "撑开/合上 {0?闸门:门}",
-                "切换闸门或门的开关状态."
-            ],
-            "toggleContainer": [
-                "打开/关闭 容器",
-                "切换容器的开合状态."
-            ],
-            "propOpenDoor": [
-                "撑开{0?闸门:门}",
-                "撑住某扇闸门或门，以允许各种实体自由穿行."
-            ],
-            "sailToIsland": [
-                "{0?游:航}向{1?港口:岛屿}",
-                "{1?导引至该岛的特定港口:启程{0?游:航}至另一岛屿}."
             ],
             "shipToIsland": [
                 "驶向港口",
@@ -524,13 +512,32 @@
                 "关入笼子",
                 "说服一个被驯养的生物进入笼子中."
             ],
+            "setCreatureAi": [
+                "",
+                ""
+            ],
+            "setTitle": [
+                "",
+                ""
+            ],
             "uncage": [
                 "释放",
                 "将生物从关着的笼子中放出来."
+            ],
+            "nPCInteract": [
+                "",
+                ""
             ]
         },
         "actionSort": {
             "default": "默认"
+        },
+        "aiType": {
+            "followClose": "跟随 (于身旁)",
+            "followFar": "跟随 (于远处)",
+            "stay": "待命",
+            "defend": "守卫",
+            "attack": "进攻"
         },
         "autoSave": {
             "off": "关闭",
@@ -671,11 +678,13 @@
             "gameActionDigWithHands": "徒手挖掘",
             "gameActionTillWithHands": "徒手耕垦",
             "gameActionPickUpExcrementWithHands": "徒手捡粪",
+            "gameActionCageCreature": "关入笼子",
             "gameActionPickUpItem": "捡起物品",
             "gameActionPickUpAllItems": "捡起所有物品",
             "gameActionPickUpDoodad": "卸除",
             "gameActionTame": "驯化它",
             "gameActionRelease": "释放它",
+            "gameActionUncage": "释放",
             "gameActionPet": "抚摸它",
             "gameActionHitch": "拴住它",
             "gameActionUnhitch": "解开它",
@@ -685,6 +694,7 @@
             "gameActionPlant": "种植",
             "gameActionPlaceDown": "放置",
             "gameActionTrade": "交易",
+            "gameActionShipToIsland": "驶向港口",
             "gameActionShoot": "投射",
             "gameActionFire": "开火",
             "gameActionProtect": "锁定物品",
@@ -709,6 +719,7 @@
             "gameActionUpgrade": "升格",
             "gameActionEnhance": "强化",
             "gameActionAlter": "转魔",
+            "gameActionSummon": "召唤",
             "gameActionExudeWithItem": "用它浸注",
             "gameActionAbsorbWithItem": "用它汲取",
             "gameActionIgniteWithItem": "用它点燃",
@@ -756,6 +767,7 @@
             "menuRight": "光标右移",
             "menuCancel": "取消",
             "menuNextOption": "下个选项",
+            "menuMoreInformation": "显示详细信息",
             "menuPreviousOption": "上个选项",
             "menuContextMenu": "快捷菜单<ContextMenu>",
             "menuSelect": "选择",
@@ -764,12 +776,7 @@
             "developerReloadGame": "重新加载游戏",
             "developerReloadAndContinueGame": "重载并继续游戏",
             "developerReloadStylesheets": "重新加载 Stylesheets",
-            "developerReloadVariableUIImages": "重新加载 Variable UI Images",
-            "menuMoreInformation": "显示详细信息",
-            "gameActionCageCreature": "关入笼子",
-            "gameActionUncage": "释放",
-            "gameActionShipToIsland": "驶向港口",
-            "gameActionSummon": "召唤"
+            "developerReloadVariableUIImages": "重新加载 Variable UI Images"
         },
         "bindableType": {
             "game": "基础操作",
@@ -922,6 +929,25 @@
             "lastUse": "最近使用",
             "name": "名字",
             "useCount": "使用次数"
+        },
+        "combatDangerLevel": {
+            "low": "低",
+            "medium": "中等",
+            "high": "高",
+            "veryHigh": "非常高",
+            "extreme": "极限"
+        },
+        "combatStrength": {
+            "tier0": "无害的",
+            "tier1": "弱小的",
+            "tier2": "粗鲁的",
+            "tier3": "强壮的",
+            "tier4": "凶恶的",
+            "tier5": "危险的",
+            "tier6": "致命的",
+            "tier7": "亡灭的",
+            "tier8": "灾厄的",
+            "tier9": "末日的"
         },
         "command": {
             "backup": "备份",
@@ -1333,14 +1359,6 @@
                 "风滚草",
                 "一种声名狼藉的普通杂草，成熟后其主体部分会从根部脱离开来并变得又干又脆，随风滚动来传播种子."
             ],
-            "graniteWaterStill": [
-                "石质蒸馏器",
-                "一个石制蒸馏器，点火后可用于制备蒸馏水."
-            ],
-            "litGraniteWaterStill": [
-                "点燃的石质蒸馏器",
-                "一个点火的石制蒸馏器，正通过蒸发制取蒸馏水."
-            ],
             "graniteCampfire": [
                 "石制篝火",
                 "一圈规则围放以维系火焰的石头."
@@ -1437,14 +1455,6 @@
                 "点燃的黏土熔炉",
                 "熔炉火起，正待开工."
             ],
-            "clayWaterStill": [
-                "黏土蒸馏器",
-                "一个黏土蒸馏器，点火后可用于制备蒸馏水."
-            ],
-            "litClayWaterStill": [
-                "点燃的黏土蒸馏器",
-                "一个点火的黏土蒸馏器，正通过蒸发制取蒸馏水."
-            ],
             "sandstoneCampfire": [
                 "砂石篝火",
                 "一圈规则围放以维系火焰的砂石."
@@ -1460,14 +1470,6 @@
             "litSandstoneFurnace": [
                 "点燃的砂石熔炉",
                 "熔炉火起，正待开工."
-            ],
-            "sandstoneWaterStill": [
-                "砂石蒸馏器",
-                "一个砂石蒸馏器，点火后可用于制备蒸馏水."
-            ],
-            "litSandstoneWaterStill": [
-                "点燃的砂石蒸馏器",
-                "一个点火的砂石蒸馏器，正通过蒸发制取蒸馏水."
             ],
             "graniteKiln": [
                 "石质窑炉",
@@ -1769,14 +1771,6 @@
                 "搭好的火山岩制落石机关",
                 "一个搭好的机关，落石危险地静候着踢到枝条的倒霉生物，准备把触发者碾成肉酱."
             ],
-            "basaltWaterStill": [
-                "火山岩制蒸馏器",
-                "一个用合适的火山岩制成的蒸馏器，点火后可用于制备蒸馏水."
-            ],
-            "litBasaltWaterStill": [
-                "点燃的火山岩制蒸馏器",
-                "一个火山岩蒸馏器，表面已经变得滚烫，已经做好了制取蒸馏水的准备."
-            ],
             "basaltCampfire": [
                 "火山岩篝火",
                 "用选好的火山岩围成一圈，这样圈出来的火坑很适合让火焰在你希望的地方持续燃烧."
@@ -1889,6 +1883,7 @@
             ]
         },
         "doodadGroup": {
+            "invalid": "",
             "litCampfire": "点燃的篝火",
             "litFurnace": "点燃的熔炉",
             "litKiln": "点燃的窑炉",
@@ -1903,7 +1898,6 @@
             "lightSource": "光源",
             "litStructure": "有照明的建筑物",
             "lockedChest": "锁住的箱子",
-            "invalid": "",
             "scarecrow": "稻草人",
             "lighthouse": "灯塔",
             "litLighthouse": "点燃的灯塔"
@@ -3168,10 +3162,6 @@
                 "日光蒸馏器",
                 "这个蒸馏器是一种收集蒸发水汽并冷凝至玻璃下容器内的设备，它能进行海水的淡化."
             ],
-            "graniteWaterStill": [
-                "石质蒸馏器",
-                "其实就是中空的岩石上加了个盖子. 通过把水烧开收集蒸汽并冷凝来淡化海水，并收集到单独的容器中去."
-            ],
             "graniteSundial": [
                 "石质日晷",
                 "一个石头做的计时工具，用太阳或月亮的位置指示昼夜之间的大致时间."
@@ -3544,10 +3534,6 @@
                 "黏土熔炉",
                 "黏土制成的可提供高温火焰的熔炉."
             ],
-            "clayWaterStill": [
-                "黏土蒸馏器",
-                "其实就是挖空的黏土砖上加了个盖子. 通过把水烧开收集蒸汽并冷凝来淡化海水，并收集到单独的容器中去."
-            ],
             "sandstoneCampfire": [
                 "砂石篝火",
                 "一圈规则围放以维系火焰的砂石."
@@ -3555,10 +3541,6 @@
             "sandstoneFurnace": [
                 "砂石熔炉",
                 "砂石制成的可提供高温火焰的熔炉."
-            ],
-            "sandstoneWaterStill": [
-                "砂石蒸馏器",
-                "其实就是中空的砂石上加了个盖子. 通过把水烧开收集蒸汽并冷凝来淡化海水，并收集到单独的容器中去."
             ],
             "graniteKiln": [
                 "石质窑炉",
@@ -4416,6 +4398,10 @@
                 "精铁刀",
                 "锋利的铁刃固定在精致抛光的手柄上. 可于战斗、收获、制造等多种情况下使用."
             ],
+            "tinOre": [
+                "锡矿石",
+                "一块含有大量杂质的锡原矿. 熔铸成锭后就能打制成软甲、各种工具或者武器."
+            ],
             "tinIngot": [
                 "锡锭",
                 "精炼后的锡块，将被打铸成柔软的金属器具."
@@ -5152,10 +5138,6 @@
                 "火山岩制落石陷阱",
                 "一种能压碎目标的陷阱，那些倒霉蛋终将在沉重的火山岩板下发现自己的头骨或肢体的遗残."
             ],
-            "basaltWaterStill": [
-                "火山岩制蒸馏器",
-                "用于从海中获取可饮用的水. 这种火山岩做成的蒸馏器需要更长时间来加热，但相应地比起同类也更耐高温."
-            ],
             "basaltSundial": [
                 "火山岩日晷",
                 "用火山岩制成的一种简陋的计时装置，利用太阳或月亮产生的影子来大致测定时间."
@@ -5239,10 +5221,6 @@
             "spikerushSeeds": [
                 "荸荠的种子",
                 "荸荠花中的纤维状的种芽."
-            ],
-            "tinOre": [
-                "锡矿石",
-                "一块含有大量杂质的锡原矿. 熔铸成锭后就能打制成软甲、各种工具或者武器."
             ],
             "woodenBookcase": [
                 "木质书架",
@@ -5391,7 +5369,6 @@
             "spine": "刺",
             "spores": "孢子",
             "stick": "枝条",
-            "notForSale": "非卖品",
             "containerOfSwampWater": "装有沼泽水的容器",
             "containerOfFilteredWater": "装有过滤水的容器",
             "sundial": "日晷",
@@ -5413,8 +5390,6 @@
             "dualWield": "可双持",
             "twoHanded": "双持",
             "boat": "船",
-            "all": "全部",
-            "last": "最近",
             "text": "文卷",
             "containerWithLiquid": "装有液体的容器",
             "craftingMaterial": "制作材料",
@@ -5431,7 +5406,9 @@
             "creatureContainment": "生物围笼",
             "gem": "宝石",
             "golem": "魔像",
-            "creatureResource": "生物材料"
+            "creatureResource": "生物材料",
+            "all": "全部",
+            "last": "最近"
         },
         "joinServerRetryReason": {
             "timeout": "服务器连接超时.",
@@ -5753,6 +5730,7 @@
             "appearedNotEffectiveForGathering": "用 {0} 采集这类资源似乎并不高效.",
             "armorAppeared": "你的护甲对它的进攻来说显得 {0}.",
             "armorProtectedFromInjuryAgainst": "你的护甲保护了你，使你免受 {0} 的伤害.",
+            "attemptToSoothBurnInWater": "你在 {0} 周围游动，试图缓解身上的烧伤，但是并没有成功.",
             "attemptToTill": "你尝试 {0} {1}, 但是并没有任何效果.",
             "badlyBurnedLostHealth": "你被狠狠地烧伤了! 你损失了 {0} 生命!",
             "barteringSkillsProvided": "基于交易技艺，你额外得到了 {0} 点券.",
@@ -6013,6 +5991,7 @@
             "mining": "采掘",
             "missedWith": "你使用 {1} 对 {0} 的进攻并未命中!",
             "missedYouWith": "{0} 使用 {1} 对你的进攻并未命中!",
+            "movedItem": "你把 {0} 移动到 {1} 中.",
             "moveOverTrapButDoNotSetOff": "你踩过了陷阱，不过幸运地没有触发机关.",
             "multiplayerGamePaused": "游戏已被暂停.",
             "multiplayerGameResumed": "游戏已被恢复.",
@@ -6046,7 +6025,8 @@
             "noRequiredItemToFireWeapon": "你没有让 {1} 开火的 {0}.",
             "noReturnWithoutCompletingChallenges": "有什么力量阻止着你在完成挑战之前离开.",
             "noRoomForImprovement": "{0} 没有提升的空间了!",
-            "notEnoughPurifiedWaterYet": "蒸馏器里还没有足够可用的净水.",
+            "noRoomToDrop": "没有足够的空间来丢弃 {0}.",
+            "noRoomToSummon": "没有足够的空间来召唤 {0}!",
             "notEnoughTreasureToReturn": "在集齐所有种类的宝藏之前，始终有种未知的冲动在心中阻挠着你的离去.",
             "notFacingCreatureToOfferThisTo": "你的面前没有可以赠予这个东西的生物.",
             "notFacingLockedObject": "你的面前没有锁上的东西.",
@@ -6062,7 +6042,6 @@
             "nothingUsefulToHarvestYet": "{0} 上有用的玩意还不能收获!",
             "noTinderToStartFire": "你没有用来生火的火绒.",
             "notSuitableToPlant": "{0} 不适合被种在 {1}中.",
-            "noWaterInStill": "蒸馏器里没有水.",
             "nPCWelcome": "欢迎回来!",
             "objectIsLocked": "这个东西被锁住了.",
             "objectIsLockedAttemptToBreakIt": "这个东西被锁住了，你试图砸开它.",
@@ -6082,6 +6061,7 @@
             "pickUpExcrement": "捡起粪便",
             "pickUpTheItem": "捡起{0?物品:物品}",
             "place": "<放下>",
+            "placedOnGround": "你把 {0} 放到了地上.",
             "plant": "<种植>",
             "plantedInGround": "你在地里种下了 {0}.",
             "plantGatheredPlant": "它产出的资源必须通过砍伐或采集来获取.",
@@ -6109,7 +6089,6 @@
             "positively": "友好",
             "pouredOut": "你倾倒了 {0}.",
             "pouredOutOnYourself": "你在自己身上泼洒了 {0}.",
-            "pouredWaterIntoStill": "你把 {0} 倒进了 {1} 里.",
             "pourHarmedPlant": "倒在 {1} 上的 {0} 对它造成了伤害.",
             "pourHealedPlant": "在 {0} 上泼洒 {2} 后，它被 {1} 治愈了.",
             "pourHealedPlantFully": "完全地",
@@ -6120,7 +6099,6 @@
             "prepared": "做好了",
             "preserve": "封贮",
             "preservedFood": "食物被你封贮好了.",
-            "purifiedWaterInStill": "蒸馏器里装着净化过的水.",
             "randomEventsFire": "你看到火焰自行喷涌而出.",
             "reduceLength": "{0} on {1} has reduced the length of your {2}.",
             "refine": "精炼",
@@ -6184,6 +6162,7 @@
             "sort": "排序",
             "sortedByBestCraftingRequirements": "{0} 已按 最适合制造 {1}排序.",
             "sortedByCategory": "{0} 已按 category {1}排序 .",
+            "sortedByCraftableOnly": "已对 {0}{1} 中可制作的物品按名称排序.",
             "sortedByDecay": "{0} 已按 腐坏 {1}排序.",
             "sortedByDurability": "{0} 已按 耐久 {1}排序.",
             "sortedByGroup": "{0} 已按 类属 {1}排序.",
@@ -6249,7 +6228,6 @@
             "tooDamaged": "{0} 损坏严重，已经不能尝试用来 {1} 了.",
             "tooExhaustedToJump": "你太过疲劳或是背了太多东西，没能跳起来.",
             "touching": "接触<touching>",
-            "tradingWith": "同 {0} 交易",
             "trampledFire": "你把火踩灭了!",
             "trampledIntoGround": "{0} 把 {1} 踩烂了<trampled into the ground>.",
             "trampleIntoGround": "你把 {0} 踩烂了<trampled into the ground>.",
@@ -6270,7 +6248,6 @@
             "unlimited": "无限的",
             "unlockedChest": "你解锁了 {0} 并查看其内的物品.",
             "unpurifiedFreshWater": "未净化的淡水",
-            "unpurifiedWaterInStill": "蒸馏器里装着还没净化的水.",
             "use": "用{ 0??}",
             "usingBareHands": "徒手 {0}",
             "vehicleDefense": "搭乘的 {0} 使你额外抵御 {1} 伤害.",
@@ -6292,7 +6269,6 @@
             "youBeginResting": "你开始在 {0} 上休息...",
             "youCannotDoThatYet": "你还不能这么做!",
             "youCanNowCombatTheTides": "在有了船之后，你终于不再被 {0} 的崖岸所束缚. 大海在呼唤着...",
-            "youCrafted": "你 {0} {1}{2}!",
             "youDoNotFindTreasureYet": "你没能找到宝藏，但...它一定就在这里!",
             "youDrank": "你喝下了 {0}!",
             "youDropTheTorch": "你丢下了火把，并引发了一场火.",
@@ -6303,7 +6279,6 @@
             "youExudeSomeReasonConflicting": "与现有属性冲突",
             "youExudeSomeReasonMax": "属性数量已经达到极限",
             "youExudeSomeReasonProperties": "仅能承受特定的属性",
-            "youFailedTo": "由于技艺水平不足，你 {0} {1} 失败了. {2}",
             "youFailedToExtinguishedFireFully": "你没能把火完全扑灭.",
             "youFailedToHeal": "由于 {0} 技艺水平不足，你治愈的尝试失败了.",
             "youFailedToHealOther": "由于 {1} 技艺水平不足，你治愈 {0} 的尝试失败了.",
@@ -6376,13 +6351,7 @@
             "youTilled": "你开垦了 {0}.",
             "youUnequip": "你卸下了 {0}.",
             "youUsed": "你使用了 {0}!",
-            "youWhileTraveling": "你在旅行期间 {0...}.",
-            "attemptToSoothBurnInWater": "你在 {0} 周围游动，试图缓解身上的烧伤，但是并没有成功.",
-            "movedItem": "你把 {0} 移动到 {1} 中.",
-            "noRoomToDrop": "没有足够的空间来丢弃 {0}.",
-            "noRoomToSummon": "没有足够的空间来召唤 {0}!",
-            "placedOnGround": "你把 {0} 放到了地上.",
-            "sortedByCraftableOnly": "已对 {0}{1} 中可制作的物品按名称排序."
+            "youWhileTraveling": "你在旅行期间 {0...}."
         },
         "messagesDefaultFilter": {
             "all": "所有",
@@ -6669,6 +6638,7 @@
             "colorizeVulnerability": "{#--COLOR-VULNERABILITY:{0}}",
             "corpseOf": "{Corpse:{0}?{Corpse:{0}}:{1?{Message:CorpseOfNamed:({1})}:{Message:CorpseOf:({2})}}}",
             "countThing": "{0} {1}",
+            "creatureSubtitle": "{0} 生物",
             "dependency": "{#--COLOR-DEPENDENCY-{0}:{1}}",
             "difference": "{+{0}:{1?{1}:{0}}}",
             "equipSlotEquipToYour": "{0}",
@@ -6688,11 +6658,10 @@
             "range": "{COMPLEX?({MIN} — {MAX}):{MIN}—{MAX}}",
             "reformatSingularNoun": "{NOUN({0} {1}){2}}",
             "renamed": "\"{0}\"",
+            "tile": "{0}{1? ({2},{3},{4})}",
             "tilled": "耕作过的 {0}",
             "unknown": "未知",
-            "unknownItem": "未知物品",
-            "tile": "{0}{1? ({2},{3},{4})}",
-            "creatureSubtitle": "{0} 生物"
+            "unknownItem": "未知物品"
         },
         "modLoadError": {
             "modLoadError": "加载模组时发生错误",
@@ -6940,10 +6909,6 @@
                 "确定要清空 {/全部/} 历史消息?",
                 "该操作无法撤销."
             ],
-            "gameCannotRunGlError": [
-                "Wayward 无法在当前系统或浏览器中运行.",
-                "{0}"
-            ],
             "gameCannotRunIndexedDbError": [
                 "存档数据加载失败.",
                 "该问题可能由以下原因导致:\n1. 同时启动了多个 Wayward 游戏进程.\n2. 你曾在 development 分支版本与 public 分支版本间切换.\n3. 你的存档数据损坏. 此情况下你可以手动备份并删除 Wayward 游戏安装路径下的 \"save\" 文件夹来尝试解决."
@@ -6972,10 +6937,6 @@
                 "淡化还没有完成.",
                 "确定要取下空容器么?"
             ],
-            "gameDesalinationNoNeed": [
-                "这类水无需淡化.",
-                "你确定要把它倒入蒸馏器中进行淡化?"
-            ],
             "gameExtinguishWaterStill": [
                 "蒸馏器内还有水在净化了.",
                 "你确定要把火熄灭么?"
@@ -7003,10 +6964,6 @@
             "gameNoSaveOnDeath": [
                 "你已死亡",
                 "硬核模式死亡后无法存档."
-            ],
-            "gamePickUpStillWithWater": [
-                "蒸馏器中已经有水了.",
-                "你确定要倒掉里面的水来拿起它吗?"
             ],
             "gameReleaseCreature": "确定要释放 {0}?",
             "gameRenameGeneric": "你想给 {0} 取什么名字?",
@@ -7040,10 +6997,6 @@
             "gameWellConvert": [
                 "把它倒下去会使井里的水也转变成 {0}.",
                 "你想转变井水的类型吗?"
-            ],
-            "gameSolarStillWontWorkInTemperature": [
-                "日光蒸馏器在没有热源导致温度不够高时不会工作.",
-                "你仍然要把它搭建在这里么?"
             ],
             "gameSolarStillWontWorkInCave": [
                 "日光蒸馏器在洞穴中无法工作.",
@@ -7243,14 +7196,6 @@
             "multiplayerRestartServerAfterLoadingSave": [
                 "多人游戏",
                 "你是否希望重启你的多人游戏服务器?"
-            ],
-            "multiplayerDisconnect": [
-                "{0}",
-                "{1}"
-            ],
-            "multiplayerDisconnectRejoin": [
-                "{0}\n尝试重新加入游戏?",
-                "{1}"
             ],
             "steamworksURLOpenedInBrowser": "该链接已经通过你默认的 WEB 浏览器打开.",
             "steamworksWorkshopOpenedInBrowser": [
@@ -7481,6 +7426,10 @@
                 "- 提高驯化的成功率.\n - 提高驯服效果持续的时间.\n - 降低 驯化/赠予/挤奶/拴系/抚摸 时消耗体力的概率.\n - 降低挤奶时减少的幸福度.\n - 提高赠予变异生物物品时驯化的成功率.\n - 提高索系变异生物或未驯服生物时的成功率.\n - 提高抚摸的效果(使它们变得更幸福等).\n - 获取侦测得知被驯服生物额外信息的能力.\n - 随着技艺水平的提高，逐渐掌握更多的操控指令."
             ]
         },
+        "skillsSort": {
+            "name": "名称",
+            "level": "掌握程度"
+        },
         "stat": {
             "health": "生命",
             "stamina": "体力",
@@ -7497,7 +7446,6 @@
                 "防御",
                 "你抵御生物或者元素的能力."
             ],
-            "reputation": "声誉",
             "metabolism": "代谢",
             "strength": "强壮",
             "insulationHeat": "耐热",
@@ -7844,7 +7792,6 @@
             "gameTooltipShowMoreInformation": "显示更多信息: {BINDINGS:MenuMoreInformation}",
             "gameTooltipDefenseLabelBase": "基础",
             "gameTooltipDefenseLabelVehicleBonus": " {0} 载具加值",
-            "gameTooltipDefenseInsulationWeight": " ({0}x{1?, {1}})",
             "gameTooltipItemUseLabelMaxWeight": "最大重量",
             "gameTooltipMagicalLabel": "魔法属性: {0}",
             "gameTooltipSharedUsesLabel": "可用于",
@@ -7953,6 +7900,13 @@
             "gameTooltipStatAttackSectionRanged": "远程攻击",
             "gameTooltipStatAttackRange": "(射程: {#--TEXT-PRIMARY:{0}})",
             "gameTooltipStatAttackMultiplier": "游戏模式加成倍率",
+            "gameTooltipCreatureLabelTamed": "驯服于",
+            "gameTooltipCreatureLabelMood": "心情",
+            "gameTooltipCreatureLabelCommand": "指令",
+            "gameTooltipCreatureLabelAberrant": "变异的",
+            "gameTooltipCreatureAberrantDescriptionShort": "领地意识强烈，且极其好斗.",
+            "gameTooltipCreatureAberrantDescriptionExtra": "这个生物领地意识强烈，且极其好斗; 它会造成更沉重的伤害，而且生存力也比同类更加坚韧.",
+            "gameTooltipCreatureAberrantDescriptionVerbose": "袭击 {#--TEXT-PRIMARY:弱点} 可能是击败它的唯一方法.\n它确实也有被 {#--TEXT-PRIMARY:驯服} 的可能性... 尽管它的友善无法持续太久.",
             "gameStatsStatAttack": "{0}",
             "gameStatsStatGeneric": "{0}",
             "gameStatsStatGenericWithMax": "{0}​/{1}",
@@ -7970,25 +7924,7 @@
             "gameStatsStatHungerStatusBad": "{#--COLOR-BAD:饥饿}",
             "gameStatsStatThirstStatusBad": "{#--COLOR-BAD:干渴}",
             "gameStatsStatWeightStatusBad": "{#--COLOR-BAD:超载}",
-            "gameStatsStatReputationTooltipAverageReputation": "平均声誉: {#--STAT-COLOR:{0}}",
-            "gameStatsStatReputationTooltipDifficulty": "难度: {#--STAT-COLOR:{0}}",
-            "gameStatsStatReputationTooltipDifficultyEasy": "简单",
-            "gameStatsStatReputationTooltipDifficultyHard": "困难",
-            "gameStatsStatReputationTooltipDifficultyInfantile": "儿戏",
-            "gameStatsStatReputationTooltipDifficultyInsane": "疯狂",
-            "gameStatsStatReputationTooltipDifficultyMedium": "中等",
-            "gameStatsStatReputationTooltipDifficultyNightmare": "噩梦",
-            "gameStatsStatReputationTooltipDifficultySimple": "极易",
-            "gameStatsStatReputationTooltipDifficultyVeryEasy": "非常简单",
-            "gameStatsStatReputationTooltipDifficultyVeryHard": "非常困难",
-            "gameStatsStatReputationTooltipBenignity": "仁善声誉: {#--STAT-COLOR:{0}/{1}}",
-            "gameStatsStatReputationTooltipMalignity": "怨恶声誉: {#--STAT-COLOR:{0}/{1}}",
-            "gameStatsStatReputationTooltipScore": "分数: {#--STAT-COLOR:{0}}",
-            "gameStatsStatReputationTooltipCivilizationScore": "文明度: {#--STAT-COLOR:{0}}",
-            "gameStatsStatReputationTooltipTurn": "回合: {#--STAT-COLOR:{0}}",
-            "gameStatsStatReputationTooltipTicks": "Ticks: {#--STAT-COLOR:{0}}",
             "gameStatsStatWeightTooltip": "负重 {#--TEXT-SECONDARY:(强壮)}",
-            "gameItemBarterCredit": "可用点券数: ",
             "gameMenuBarButtonTooltipBindable": " {#--TEXT-SECONDARY:{BINDINGS:{0}}}",
             "gameMenuBarButtonTooltipSaveSize": "{#--TEXT-SECONDARY:已使用 {0}MB}",
             "gameMenuBarButtonTooltipSaveTurnsAgo": "{#--TEXT-SECONDARY:已在 {0} {PLURAL({0})回合} 前保存}",
@@ -8478,8 +8414,6 @@
             "menuMultiplayerOptionsCheckConnectionResultSteamRelayNetwork": "Steam Relay Network 连接: {0}",
             "menuMultiplayerOptionsCheckConnectionResultSteamRelayNetworkFail": "{#--COLOR-BAD:无法验证与 Steam Relay Network 的连接状态}.",
             "menuMultiplayerOptionsCheckConnectionResultSteamRelayNetworkUnavailable": "{#--COLOR-BAD:Steam Relay Network 不可用}.",
-            "menuMultiplayerOptionsCheckConnectionResultWebRTC": "WebRTC 连接: {0}",
-            "menuMultiplayerOptionsCheckConnectionResultWebRTCFail": "{#--COLOR-BAD:无法建立 WebRTC 连接. 连接可能被防火墙或路由器阻拦. 如果 WebSocket 连接正常玩家仍然能够加入你的游戏}.",
             "menuMultiplayerOptionsCheckConnectionResultWebSocket": "WebSocket 连接: {0}",
             "menuMultiplayerOptionsCheckConnectionResultWebSocketFail": "{#--COLOR-BAD:无法验证 端口 {0} 是否可用}.",
             "menuMultiplayerOptionsCheckConnectionResultWebSocketUnavailable": "{#--COLOR-BAD: WebSocket 当前并未工作}.",
@@ -8540,14 +8474,7 @@
             "tabCrafting": "制造",
             "tabDismantle": "分解",
             "windowTitleContainer": "容器",
-            "windowTitleInventory": "行李",
-            "gameTooltipCreatureLabelTamed": "驯服于",
-            "gameTooltipCreatureLabelMood": "心情",
-            "gameTooltipCreatureLabelCommand": "指令",
-            "gameTooltipCreatureLabelAberrant": "变异的",
-            "gameTooltipCreatureAberrantDescriptionShort": "领地意识强烈，且极其好斗.",
-            "gameTooltipCreatureAberrantDescriptionExtra": "这个生物领地意识强烈，且极其好斗; 它会造成更沉重的伤害，而且生存力也比同类更加坚韧.",
-            "gameTooltipCreatureAberrantDescriptionVerbose": "袭击 {#--TEXT-PRIMARY:弱点} 可能是击败它的唯一方法.\n它确实也有被 {#--TEXT-PRIMARY:驯服} 的可能性... 尽管它的友善无法持续太久."
+            "windowTitleInventory": "行李"
         },
         "uiQuadrant": {
             "none": "Storage",
@@ -8606,14 +8533,6 @@
             "moveAllOfSameQuality": "移动 {0?{0}:(同品质)}",
             "tradeTraderSell": "{0?以 {#--COLOR-BAD:{0}} 点券}购买",
             "tradeTraderBuy": "{1?以 {#--COLOR-GOOD:{1}} 点券}售给 {0??商人}",
-            "itemActions": [
-                "使用 {0}",
-                "使用 \"最\" 合适的物品来执行某些操作."
-            ],
-            "actions": [
-                "进行 {0}",
-                "执行基本的行动."
-            ],
             "gatherWithHands": "徒手采集",
             "harvestWithHands": "徒手收获",
             "digWithHands": "徒手挖掘",
@@ -8632,11 +8551,11 @@
             "equipOffHand": "装备于副手",
             "restOnGround": "在大地上休息",
             "sleepOnGround": "在大地上入睡",
+            "commandMenu": "指挥",
             "none": [
                 "无行动",
                 "{0?使用 {BINDINGS:GameActionBarConfigure} 为该格位分配一个行动.}"
-            ],
-            "commandMenu": "指挥"
+            ]
         },
         "website": {
             "twitter": "Twitter",
@@ -8659,36 +8578,6 @@
         "worldLayer": {
             "cave": "洞穴",
             "overworld": "地表"
-        },
-        "aiType": {
-            "followClose": "跟随 (于身旁)",
-            "followFar": "跟随 (于远处)",
-            "stay": "待命",
-            "defend": "守卫",
-            "attack": "进攻"
-        },
-        "combatDangerLevel": {
-            "low": "低",
-            "medium": "中等",
-            "high": "高",
-            "veryHigh": "非常高",
-            "extreme": "极限"
-        },
-        "combatStrength": {
-            "tier0": "无害的",
-            "tier1": "弱小的",
-            "tier2": "粗鲁的",
-            "tier3": "强壮的",
-            "tier4": "凶恶的",
-            "tier5": "危险的",
-            "tier6": "致命的",
-            "tier7": "亡灭的",
-            "tier8": "灾厄的",
-            "tier9": "末日的"
-        },
-        "skillsSort": {
-            "name": "名称",
-            "level": "掌握程度"
         }
     },
     "pluralizationRules": {
