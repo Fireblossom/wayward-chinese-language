@@ -1,17 +1,23 @@
 {
     "name": "Wayward 中文补丁",
     "description": "Wayward 全文本汉化",
-    "version": "2.13.1.1",
+    "version": "2.13.2.1",
     "author": "柯箴之",
     "github": "https://github.com/PlotNarrater/wayward-chinese-language",
-    "waywardVersion": "2.13.1-beta",
+    "waywardVersion": "2.13.2-beta",
     "languages": [
         "lang/chinese_simple/base",
         "lang/chinese_simple/mod_starter_quest",
         "lang/chinese_simple/mod_debug_tools",
         "lang/chinese_simple/mod_balancing_tools",
         "lang/chinese_simple/mod_tars",
-        "lang/chinese_simple/mod_oddmagicks"
+        "lang/chinese_simple/mod_oddmagicks",
+        "lang/chinese_traditional/base",
+        "lang/chinese_traditional/mod_starter_quest",
+        "lang/chinese_traditional/mod_debug_tools",
+        "lang/chinese_traditional/mod_balancing_tools",
+        "lang/chinese_traditional/mod_tars",
+        "lang/chinese_traditional/mod_oddmagicks"
     ],
     "tags": [
           "Language"

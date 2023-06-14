@@ -14,17 +14,17 @@
 ## 汉化范围
 
 官方内容
-+ 游戏本体 <更新至 2.13.1-beta 版本> <变更已经校对完成，但当前较2.12中的新增项大部分未完成汉化>
-+ 内置 mod [Starter Quest] <更新至 2.13.1-beta 版本>
++ 游戏本体 <更新至 2.13.2-beta 版本> <变更已经校对完成，但当前较2.12中的新增项有部分未完成汉化>
++ 内置 mod [Starter Quest] <更新至 2.13.2-beta 版本>
 
-创意工坊中的部分 mod <均更新至 2.13.1-beta 版本>
+创意工坊中的部分 mod <均更新至 2.13.2-beta 版本>
 + [debug tools], [balancing tools], [tars], [oddmagicks]
 
 ## 使用
 
 安装后在设置选项[Options]中，将语言[Language]选为简体中文或繁体中文即可。
 
-[WIP 暂时并未提供繁体支持]需要注意，繁体中文是通过将简体中文进行简繁转换自动获得，并未经过人工校对可能会存在谬误，建议尽量使用简体中文游玩。
+需要注意，繁体中文是通过将简体中文进行简繁转换自动获得，并未经过人工校对可能会存在谬误；如有疑谬请参考简体中文或直接以官方英文为准。
 
 由于语言包内部格式可能存在差异，不建议在更早版本中使用，否则可能会使汉化文本产生缺失、错误或混乱
 
@@ -52,4 +52,4 @@
 
 某些项由于各种原因暂未翻译，或在中文后以备注形式保留了部分原文。具体列表请在 CONTRIBUTING.md / [GITHUB:wayward-chinese-language/CONTRIBUTING.md](https://github.com/PlotNarrater/wayward-chinese-language/blob/master/CONTRIBUTING.md) 中查看
 
-此部分内容如果能提供令人信服的改良或见解，可以在 Steam 或 Github 上留言讨论，以帮助优化翻译效果
+此部分内容如果能提供令人信服的改良或见解，可以在 Steam 创意工坊下讨论，或在 Github 上参与编写，以帮助优化翻译效果
