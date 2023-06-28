@@ -144,14 +144,14 @@ X.X.X.0 版本计划对应于通过脚本自动在游戏更新后生成的临时
 
 # 工具脚本
 
-繁体中文生成 与 Version Update Tool 均在\mod-reference 下的 translate_tools.py 中实现
-运行是基于py 3.11下，该简易脚本并未实现api接口，路径等设置如需修改需要手动检查，默认为 cd 至mod-reference后的相对路径
+繁体中文生成 与 Version Update Tool 的功能均在 \mod-reference 下的 translate_tools.py 中实现
+运行环境需求py 3.11以及zhconv py库（可pip install）
 
-默认需要旧版的official-eng以及对应的翻译文件，默认目标版本为\mod-reference下从官方git中拉取的英文文本=
+此外，translate_tools_cli / translate_tools_gui 分别基于 config 提供简易的命令行及图形界面，win下可以通过 run_gui.bat 直接双击运行启动 GUI
 
-特别注意，运行前请将默认config复制至script_data中并确认配置中的各项路径，否则无法正常运行
+特别注意，cli与gui运行时默认已经 cd 至mod-reference后的相对路径，且资源文件路径按照tool_configs_default.json下配置（官方英文可从官方git中拉取）。如需修改配置建议将默认config复制至data后修改
 
-以下提供两个脚本的简易思路，具体说明请参考代码中的注释
+以下提供两个脚本的简易实现思路，具体说明请参考代码中的注释
 
 ## 繁体中文生成
 
