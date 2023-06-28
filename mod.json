@@ -6,18 +6,18 @@
     "github": "https://github.com/PlotNarrater/wayward-chinese-language",
     "waywardVersion": "2.13.2-beta",
     "languages": [
-        "lang/chinese_simple/base",
-        "lang/chinese_simple/mod_starter_quest",
-        "lang/chinese_simple/mod_debug_tools",
-        "lang/chinese_simple/mod_balancing_tools",
-        "lang/chinese_simple/mod_tars",
-        "lang/chinese_simple/mod_oddmagicks",
-        "lang/chinese_traditional/base",
-        "lang/chinese_traditional/mod_starter_quest",
-        "lang/chinese_traditional/mod_debug_tools",
-        "lang/chinese_traditional/mod_balancing_tools",
-        "lang/chinese_traditional/mod_tars",
-        "lang/chinese_traditional/mod_oddmagicks"
+        "lang/zh_cn/base",
+        "lang/zh_cn/mod_starter_quest",
+        "lang/zh_cn/mod_debug_tools",
+        "lang/zh_cn/mod_balancing_tools",
+        "lang/zh_cn/mod_tars",
+        "lang/zh_cn/mod_oddmagicks",
+        "lang/zh_tw/base",
+        "lang/zh_tw/mod_starter_quest",
+        "lang/zh_tw/mod_debug_tools",
+        "lang/zh_tw/mod_balancing_tools",
+        "lang/zh_tw/mod_tars",
+        "lang/zh_tw/mod_oddmagicks"
     ],
     "tags": [
           "Language"

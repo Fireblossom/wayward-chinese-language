@@ -1,42 +1,60 @@
 {
-    "update_process_paths": {
-        "active":false,
-        "in":{
-            "official_prev_ver": "./script_data/english.json",
-            "official_latest_ver": "./english-official/english.json",
-            "translation_prev_ver": "./script_data/base.json"
+    "default_fileds_paths":{
+        "Prev Language Base":"./data/english.json",
+        "Latest Language Base":"./english-official/english.json",
+        "Target Translation":"../lang/zh_cn/base.json",
+
+        "Snapshot Translation":"./data/base.json",
+        "Sync Diff Report":"./data/report_sync_diff.json",
+        "Sync Refer Report":"./data/report_sync_refer.json",
+
+        "Check Miss Report":"./data/report_check_miss.json",
+
+        "Translate Additions": "./data/translate_addition.json",
+
+        "Current Translate Dir":"./../lang/zh_cn",
+        "Transform Translate Dir":"./../lang/zh_tw"
+    },
+    "process_mapings_gui":[
+        {
+            "NAME": "Copy Snapshot",
+            "IN":["Target Translation", "Latest Language Base"],
+            "OUT":["Snapshot Translation", "Prev Language Base"]
         },
-        "out":{
-            "translation_sync": "./script_data/updated_base.json",
-            "report_diff": "./script_data/updated_report_diff.json",
-            "report_refer": "./script_data/updated_report_refer.json"
+        {
+            "NAME": "Sync Base Changes",
+            "IN":["Prev Language Base", "Latest Language Base", "Snapshot Translation"],
+            "OUT":["Target Translation", "Sync Diff Report", "Sync Refer Report"]
+        },
+        {
+            "NAME": "Check Translation Misses",
+            "IN":["Target Translation", "Latest Language Base"],
+            "OUT":["Check Miss Report"]
+        },
+        {
+            "NAME": "Merge Additions to Translation",
+            "IN":["Snapshot Translation", "Translate Additions"],
+            "OUT":["Target Translation"]
+        },
+        {
+            "NAME": "Convert Zh-cn to Zh-tw",
+            "IN":["Current Translate Dir"],
+            "OUT":["Transform Translate Dir"]
         }
-    },
-    "check_process_paths":{
-        "active":false,
-        "translation_prev_ver": "./script_data/base.json",
-        "official_latest_ver": "./english-official/english.json",
-        "report_miss": "./script_data/check_report_miss.json"
-    },
-    "merge_process_paths": {
-        "active":false,
-        "addition_translations": "./script_data/addition_translation.json",
-        "translation_prev_ver": "./script_data/updated_base.json",
-        "merged_out_path": "./script_data/merged_base.json"
-    },
-    "convert_process_paths": {
-        "active":false,
-        "inputs":"./../lang/chinese_simple",
-        "outputs":"./../lang/chinese_traditional"
-    },
+    ],
     
+    "process_active_cli":[
+        "Copy Snapshot",
+        "Sync Base Changes",
+        "Check Translation Misses",
+        "Merge Additions to Translation",
+        "Convert Zh-cn to Zh-tw"
+    ],
+
     "translate_exceptions": {
         "dictionaries": {
             "humanName":null,
-            "input":null,
-            "ui":{
-                "menuChangelogHeadingUnchartedWaters":null
-            }
+            "input":null
         }
     },
     "translate_special_cases":{

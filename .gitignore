@@ -1,3 +1,4 @@
 mod-reference/english-official
 mod-reference/local_cmd
-mod-reference/script_data
+mod-reference/data
+mod-reference/__pycache__
