@@ -42,8 +42,8 @@
 			"buttonInspectLocalPlayer": "檢查本地玩家詳細調試信息 {BINDINGS:ModDebugToolsInspectLocalPlayer}",
 			"buttonRemoveAllCreatures": "移除全部生物",
 			"buttonRemoveAllNPCs": "移除全部 NPC",
-			"buttonAudio": "播放",
-			"buttonParticle": "Spawn Particle",
+			"buttonAudio": "播放音效",
+			"buttonParticle": "繪製粒子特效",
 			"labelLayer": "地層",
 			"optionLayer": "{1} {#--text-secondary:({2?{2}, }{0})}",
 			"headingIslandCurrent": "島嶼: {0??}",
@@ -188,7 +188,9 @@
 			"temperatureOverlayModeProduced": "Produced",
 			"temperatureOverlayModeCalculated": "Calculated",
 			"revertDeath": "以完美狀態回滾至死亡之前",
-			"statsPercentage": "{0}%"
+			"statsPercentage": "{0}%",
+			"labelReplaceData": "用",
+			"buttonReplace": "替換 {0} 的數據"
 		},
 		"item": {
 			"none": "none"
@@ -197,7 +199,10 @@
 			"modDebugToolsTemperature": "Debug: 溫度"
 		},
 		"command": {
-			"modDebugToolsDebugToolsPermission": "debugtoolspermission"
+			"modDebugToolsDebugToolsPermission": "調試權限"
+		},
+		"prompt": {
+			"modDebugToolsReplacePlayerData": ["你確定想要\n將{0} 的玩家數據替換為 {1}?", "{#--COLOR-BAD:該操作無法撤回!}"]
 		}
 	}
 }

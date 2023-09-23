@@ -54,7 +54,12 @@
     "translate_exceptions": {
         "dictionaries": {
             "humanName":null,
-            "input":null
+            "input":null,
+            "misc": {
+                "bindingInputModifierSeparator":null,
+                "bindingMacroSeparator":null
+            },
+            "lighthouseName":null
         }
     },
     "translate_special_cases":{

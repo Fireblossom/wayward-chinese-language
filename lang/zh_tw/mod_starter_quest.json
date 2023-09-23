@@ -2,7 +2,7 @@
 	"extends": "繁體中文",
 	"dictionaries": {
 		"questRequirement": {
-			"modStarterQuestActionSlots": "在操作欄上添加一個新的快捷行動",
+			"modStarterQuestActionSlots": "將 {0=1?使用物品:{0=0?進行行動:任意操作}} 分配於操作欄上",
 			"modStarterQuestLightCampfire": "點燃營火",
 			"modStarterQuestStokeCampfire": "為營火添火",
 			"modStarterQuestFillDripstone": "將水倒入濾石",
@@ -21,13 +21,18 @@
 			],
 
 			"modStarterQuestActionSlots": [
+				"行動菜單 & 快捷行動",
+				"{#--color-brown:當面向 Wayward 世界中的絕大多數物體時，你都可以通過行動菜單(按下{BINDINGS:GameActions})或者使用菜單(按下{BINDINGS:GameActions})來與之交互. 只是這樣行動可能會比較繁瑣.}\n\n你也可以將行動添加到操作欄上，以便僅用一個按鍵來快速執行它們.\n\n具體僅需將滑鼠懸停在操作格上並按下 {BINDINGS:GameActionBarConfigure} 即可達成. 在彈出的菜單中選擇 \"砍伐\" 並點選 \"完成\" 進行確認.\n\n之後你就可以使用操作格上標記的快捷鍵了. 比如說, 第一個操作格可以按下 {BINDINGS:GameActionBarUseSlot0} 來執行綁定的操作.\n\n{#--color-brown:這種方式綁定的操作默認會選用行李中 \"最好\" 的可用物品. 建議將其他常用行動如 \"採掘\", \"宰割\" 以及 \"引火\" 也設置到不同格位上以便後續使用.}"
+			],
+
+			"modStarterQuestItemActionSlots": [
 				"物品使用 & 快捷行動",
-				"{#--color-brown:所有物品都有一些使用它們進行的相關行動.}\n\n你可以隨時按下 {BINDINGS:GameItemMenu} 打開\"使用\"菜單，來查看能夠執行的動作.\n\n{#--color-brown:有時你可能會覺得這樣使用物品顯得比較笨拙，那麼你就可以考慮通過操作欄為某個特定行為綁定快捷鍵.}\n\n- 把物品拖拽到操作欄上.\n\n- 或者使用任意一種 \"為操作欄分配行動\" 的快捷鍵。例如在滑鼠懸停於某個物品之上時，按下 {BINDINGS:GameActionBarAssignSlot0}, {BINDINGS:GameActionBarAssignSlot1}, 或 {BINDINGS:GameActionBarAssignSlot2} 來綁定到操作欄的第 1/2/3 格.\n\n{#--color-brown:一旦物品被綁定到操作欄之後，你就可以通過對應的(當滑鼠在操作欄格位上懸停時顯示的)快捷鍵來使用它了}\n\n此外, 你也可以將任意的某個\"行動\"通過 {BINDINGS:MenuContextMenu} 綁定到空的操作欄格位上. 你所綁定的\"行動\"在執行時將會自動選擇最匹配的物品來使用."
+				"{#--color-brown:所有物品都有一些使用它們進行的相關行動.}\n\n你可以隨時按下 {BINDINGS:GameItemMenu} 打開\"使用\"菜單，來查看能夠執行的動作.\n\n{#--color-brown:如果你覺得這樣使用物品顯得很笨拙，那麼也可以嘗試用操作欄作為替代.}\n\n- 把物品拖拽到操作欄上.\n\n- 或者使用任意一種 \"為操作欄分配行動\" 的快捷鍵。例如在滑鼠懸停於某個物品之上時，按下 {BINDINGS:GameActionBarAssignSlot0}, {BINDINGS:GameActionBarAssignSlot1}, 或 {BINDINGS:GameActionBarAssignSlot2} 來綁定到操作欄的第 1/2/3 格.\n\n{#--color-brown:這個\"為操作欄分配行動\"的操作默認是組合快捷鍵，即你需要連續按順序按下對應按鍵，而非同時按下兩者."
 			],
 
 			"modStarterQuestResourceGathering": [
 				"收集資源",
-				"現在你已經裝備了什麼並為它分配了一個操作欄，你可以試著去收集一些資源了.\n\n首先如果你是通過操作欄來使用物品的話，請確保它的行動已經設置成了 \"{/砍伐/}\" 或是 \"{/採掘/}\".\n\n去尋找一棵蘋果樹並收集它的樹枝，以及尋找灰色的山巖來收集石塊."
+				"現在你已經整理好了操作欄的設置，是時候去嘗試收集些資源了.\n\n首先如果你是通過操作欄來使用物品的話，請確保它的行動已經設置成了 \"{/砍伐/}\" 或是 \"{/採掘/}\".\n\n去尋找一棵蘋果樹並收集它的樹枝，以及尋找灰色的山巖來收集石塊."
 			],
 
 			"modStarterQuestCrafting": [
@@ -47,7 +52,7 @@
 
 			"modStarterQuestWoodenPoles": [
 				"木桿",
-				"這些你剛剛收穫的生肉只有用火進行料理後才能安全地食用. 但首先你需要收集一些材料做一個用來生火的東西.\n\n分解足夠多的樹枝或原木以獲取至少兩個\"{/木桿/}\"."
+				"這些你剛剛收穫的生肉只有用火進行料理後才能安全地食用. 但首先你需要收集一些材料做一個用來生火的東西.\n\n分解原木，之後分解以此得到的木板，就能快速獲得足量的\"{/木桿/}\"了."
 			],
 
 			"modStarterQuestHandDrill": [
@@ -92,7 +97,7 @@
 
 			"modStarterQuestExtraStorage": [
 				"額外倉儲",
-				"感覺背包開始變得沉重了? 那麼你可能需要考慮在你隨身攜帶的行李之外弄些長期的存儲設施.\n\n最簡單的倉儲容器是通過製造獲取的 \"{/木製箱子/}\"，為此你需要準備些原木和木銷（木銷是通過分解木桿得來，木桿則可以用樹枝分解獲取）.\n\n如果你希望攜帶更沉一些的行李，那麼你可能需要做個小袋子或者皮背包了，它們可以減少其內部存放物品50%的體感重量."
+				"感覺背包開始變得沉重了? 那麼你可能需要考慮在你隨身攜帶的行李之外弄些長期的存儲設施.\n\n最簡單的倉儲容器是通過製造獲取的 \"{/木製箱子/}\"，為此你需要備好一些木板和木銷（木銷是通過分解木桿得來，木桿則可以用樹枝或木板分解取得，而木板是分解原木的產物）.\n\n如果你希望攜帶更沉一些的行李，那麼你可能需要做個小袋子或者皮背包了，它們可以減少其內部存放物品50%的體感重量."
 			],
 
 			"modStarterQuestDripstone": [

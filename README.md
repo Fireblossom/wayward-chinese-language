@@ -14,10 +14,10 @@
 ## 汉化范围
 
 官方内容
-+ 游戏本体 <更新至 2.13.2-beta 版本> <变更已经校对完成，但当前较2.12中的新增项有部分未完成汉化>
-+ 内置 mod [Starter Quest] <更新至 2.13.2-beta 版本>
++ 游戏本体 <更新至 2.13.5-beta 版本> <变更已经校对完成，但当前有少量信息提示未更新>
++ 内置 mod [Starter Quest] <更新至 2.13.5-beta 版本>
 
-创意工坊中的部分 mod <均更新至 2.13.2-beta 版本>
+创意工坊中的部分 mod <均更新至 2.13.5-beta 版本>
 + [debug tools], [balancing tools], [tars], [oddmagicks]
 
 ## 使用
