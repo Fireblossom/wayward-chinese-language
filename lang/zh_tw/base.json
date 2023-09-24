@@ -6309,7 +6309,7 @@
             "repair": "修理",
             "reputationDecreased": "下降{0}點",
             "reputationIncreased": "上升{0}點",
-            "reputationUpdate": "你的聲譽{0}.",
+            "reputationUpdate": "你的聲譽 {0}.",
             "requiredForDisassembly": "拆解 {1} 需要 {0}!",
             "requiresFireToBeLit": "你還需要在蒸餾器下面點火才能開始進行淡化.",
             "requiresYouFacingFireSource": "你需要面對一個火源才能點燃 {0}.",
@@ -6612,7 +6612,18 @@
             "nPCMerchantNewInventoryDialog1": "嘿，看這裡! 快來看看，我弄到了一些新貨.",
             "nPCMerchantNewInventoryDialog2": "噢，旅行者! 我弄到了些你一定想要的新東西.",
             "nPCMerchantNewInventoryDialog3": "哇哦! 這有些你可能會感興趣的新玩意.",
-            "nPCMerchantNewInventoryDialog4": "喔, {0}! 看這裡，店鋪上新了!"
+            "nPCMerchantNewInventoryDialog4": "喔, {0}! 看這裡，店鋪上新了!",
+            "dangerousMove": "在幾乎就要走入 {0} 前，你猛地反應過來並停下了腳!",
+            "dangerousOpen": "在幾乎就要打開燃燒著的 {0} 前，你猛地反應過來並停下了手!",
+            "nPCShipperShipToIsland": "我現在要帶著你的貨物出發去 {0} 了!",
+            "nPCShipperStartingDialog1": "在這附近看到另一位飽經風霜者真令人訝異. 我是被燈塔吸引來的. 我能為您提供什麼服務麼?",
+            "nPCShipperStartingDialog2": "我是這的船長，隨時可以把你的貨物運到任何需要的地方... 只要付出一點點代價.",
+            "nPCShipperStartingDialog3": "喂，陌生人! 我是這的託運商，願意為你的珍貴貨物穿過這片險峻海域提供保駕護航.",
+            "nPCShipperStartingDialog4": "你好，旱鴨子! 我看到你燈塔的光亮於是就來了. 我是 {0}，經營著一點航運業務，我能幫到你麼?",
+            "somethingInTheWayOfReleasing": "有東西正擋在你釋放 {0} 的地方上!",
+            "somethingInTheWayOfSummoning": "有東西正擋在你召喚 {0} 的地方上!",
+            "statIncreasing": "你感知到你的 {0} 由 {1} 增長至 {2}!",
+            "uiActionCannotUseRequiresNPC": "此行為需要 {0??可用的人選}."
         },
         "messagesDefaultFilter": {
             "all": "所有",
@@ -7525,6 +7536,10 @@
             "multiplayerServerHasUnpublishedMods": [
                 "警告: 啟用了非創意工坊的模組!",
                 "非創意工坊的模組{/只能/}從遊戲外自行分發，未安裝這些模組的客戶端將無法接入遊玩.\n即時這些模組已經發布於創意工坊，從創意工坊下載的複製也{/無法/}生效.\n{..}"
+            ],
+            "gameShipToIslandPayment": [
+                "{0} 要求你為這趟海運提供報償.",
+                "他們在你的行囊中選中了 {1??一件珍寶}. 是否確認並繼續?"
             ]
         },
         "quadrantComponent": {
@@ -7774,7 +7789,7 @@
             "insulationCold": "抗寒",
             "produce": "生產",
             "happiness": "幸福度",
-            "tamed": "馴服的",
+            "tamed": "馴服度",
             "petting": "愛撫",
             "waste": "排洩",
             "reputation": [
@@ -8864,7 +8879,30 @@
             "miscSaveVersionUnknown": "Unknown",
             "miscVersion": "{0?Beta:Release} {1}.{2}.{3} {4?(development)}",
             "miscBindingIcon": "該圖標意為 \"{0}\"",
-            "miscBindingIconThen": "這個箭頭符號代表按順序先後鍵入兩者. 你可以理解為 \"然後\""
+            "miscBindingIconThen": "這個箭頭符號代表按順序先後鍵入兩者. 你可以理解為 \"然後\"",
+            "gameDialogNotesSettingsPinUnreadNotesAutomatically": "在消息欄中提醒 新/未讀 筆記",
+            "gameDialogContainerShipperNPC": "通過 {0} 運輸物品",
+            "gameDialogContainerShipperNPCButtonShipToIsland": "運輸至...",
+            "gameDialogIslandsShip": "運輸/Ship",
+            "gameDialogIslandsCloseOnTravel": "旅行時關閉所有當前打開的面板/會話",
+            "gameDialogIslandsShipTitle": "通過 {0} 運輸物品至...",
+            "gameDialogIslandsNoPort": "無港口",
+            "gameTooltipDefenseInsulationWeightLabel": "權重 {0}",
+            "gameTooltipDefenseInsulationWeightTooltip": "{*{0}: 權重 {1}/{2} ({3}%)*}\n抗性實際取值於你所有裝備的\"加權\"均值. 更高權重的裝備格位會對你的綜合抗性產生更多影響.",
+            "gameTooltipDefenseInsulationNotRequired": "選配",
+            "gameTooltipDefenseInsulationNotRequiredTooltip": "{*該格位為選配.*}\n當你在選配格位裝備高抗性物品時，它將會參與加權計算以提高你的綜合抗性, {/反之/}則計算權重時會被忽略.",
+            "gameTooltipSharedResistsAndVulnsLabelVulnerableTo": "脆弱",
+            "gameTooltipSharedResistsAndVulnsLabelResistantTo": "抵抗",
+            "gameTooltipSharedResistsAndVulnsLabelImmuneTo": "豁免",
+            "gameTooltipSharedResistsAndVulnsLabelHealsFrom": "吸收",
+            "gameTooltipNPCMerchantNewInventory": "新物品!",
+            "gameTooltipNPCShipperNoItems": "無",
+            "gameTooltipNPCShipperContainedItems": "等待運輸的物品",
+            "gameTooltipCreatureLabelCanPetIn": "距可撫摸還有",
+            "gameTooltipCreatureCanPet": "可撫摸",
+            "gameTooltipCreatureLabelCanMilkIn": "距可產奶還有",
+            "gameTooltipCreatureProducingMilk": "可產奶",
+            "menuMainButtonModsTooltipAndXOthers": "...以及其他 {0} 項..."
         },
         "uiQuadrant": {
             "none": "Storage",
