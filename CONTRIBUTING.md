@@ -4,6 +4,20 @@
 
 警告：以下部分为汉化制作的相关信息，可能包含一定的剧透性质内容
 
+# 外部资源
+
+[GITHUB:英文原文/游戏本体](https://github.com/WaywardGame/english-language)
+
+[GITHUB:英文原文/mod/starterquest](https://github.com/WaywardGame/starterquest/blob/master/lang/english.json)
+
+[GITHUB:英文原文/mod/debugtools](https://github.com/WaywardGame/debugtools/blob/master/lang/english.json)
+
+[GITHUB:英文原文/mod/balancingtools](https://github.com/WaywardGame/balancingtools/blob/master/lang/english.json)
+
+[GITHUB:英文原文/mod/tars](https://github.com/WaywardGame/tars/blob/master/lang/english.json)
+
+[GITHUB:英文原文/mod/oddmagicks](https://github.com/WaywardGame/oddmagicks/blob/main/lang/english.json)
+
 # 开发 & 规约
 
 ## 使用 Git 在本地 安装/加载 模组
@@ -22,9 +36,7 @@ X.X.X.0 版本计划对应于通过脚本自动在游戏更新后生成的临时
 
 # 翻译游戏文本
 
-官方在[GITHUB:WaywardGame/english-language](https://github.com/WaywardGame/english-language)中已经提供了提取出的原始文本
-
-为便于译制，该项目作为此项目的依赖项，设置于 mod-reference\english-official 路径下
+为便于译制，本体语言包的GITHUB项目已作为此项目的依赖项，设置于 mod-reference\english-official 路径下
 
 ## 存疑项列表
 
