@@ -54,7 +54,7 @@
     "translate_exceptions": {
         "dictionaries": {
             "humanName":null,
-            "input":null,
+            "input": null,
             "misc": {
                 "bindingInputModifierSeparator":null,
                 "bindingMacroSeparator":null
@@ -63,6 +63,16 @@
         }
     },
     "translate_special_cases":{
+        "dictionaries": {
+            "input": {
+                "mouse0": "单击鼠标左键",
+                "mouse1": "单击鼠标中键",
+                "mouse2": "单击鼠标右键",
+                "scrollDown": "鼠标滚轮向下滑动",
+                "scrollUp": "鼠标滚轮向上滑动",
+                "touchPress": "触摸"
+            }
+        },
         "pluralizationRules": {
             "pluralRules": [],
             "singularRules": [],
@@ -81,6 +91,5 @@
         }
 
     }
-
 
 }

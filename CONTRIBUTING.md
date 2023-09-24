@@ -140,7 +140,7 @@ X.X.X.0 版本计划对应于通过脚本自动在游戏更新后生成的临时
 
 ### 其他
 + water still  蒸馏器
-+ milestone 往事
++ milestone 丰碑
 
 # 工具脚本
 

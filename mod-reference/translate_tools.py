@@ -174,8 +174,8 @@ def excute_merge(snapshot_translation_f, translate_additions_f, target_translati
     trans_addition = json.load(codecs.open(translate_additions_f, "r", encoding="utf-8"))
 
     merge_translation(base_tran, trans_addition)
-    merge_translation(base_tran, trans_sp_cases)
     filter_exceptions(base_tran, trans_exceptions)
+    merge_translation(base_tran, trans_sp_cases)
     # this file will keep all translation items without changes/removes, can be seen as fast compatibility version
     json.dump(base_tran, codecs.open(target_translation_f, "w", encoding="utf-8"), indent=4, ensure_ascii=False)
 
